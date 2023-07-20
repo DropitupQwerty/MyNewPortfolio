@@ -1,12 +1,13 @@
 import React from 'react'
 // import { BsBrush } from 'react-icons/bs'
 // import { BsDot } from 'react-icons/bs'
-import {  BiLogoFigma, BiLogoFirebase, BiLogoJava, BiLogoJavascript, BiLogoReact, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoUnity, BiLogoVisualStudio } from 'react-icons/bi'
+import {  BiLogoFirebase, BiLogoJava, BiLogoJavascript, BiLogoReact, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoUnity, BiLogoVisualStudio } from 'react-icons/bi'
 import { SiAdobephotoshop } from 'react-icons/si'
+
 // import { GoTools } from 'react-icons/go'
 // import {MdComputer} from 'react-icons/md'
 
-export const AppSkillsCard = () => {
+export const SkillsAndLanguages = () => {
 
     const ProgrammingLanguages = [
 
@@ -68,27 +69,27 @@ export const AppSkillsCard = () => {
 
 
     return (
-        <div className='relative  '>
-            <div className='h-[100vh] px-[100px]  w-full font-Montserrat ' id='knowledge'  >
+        <div className='relative h-[100vh] flex items-centers shadow-md'>
+            <div className=' px-[100px]  w-full font-Montserrat ' id='knowledge'  >
                 <div className='flex justify-between gap-10 items-center my-14'>
                     <span className='w-[80%] h-[1px] bg-[#00ADB5] '></span>
                     {/* <span><BsDot/></span> */}
                     <div className='w-[50vw] '>
                         <h1 className='text-[20px]  text-[#00ADB5] font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
-                        Programming Languages , Frameworks and Devtools 
+                        Programming Languages , Frameworks and Devtools
                         </h1>
-                        <p className='mt-2' >I Build websites with these programming languages , frameworks , dev tools and designing tools  . Hoping to gain more a lot of new programming languages and frameworks   </p>
+                        <p className='mt-2 text-[#393E46]' >I build websites with these programming languages , frameworks , dev tools and designing tools.</p>
                     </div>
                 </div>
                 <div className='flex px-[100px] items-center'>
-                    <div className='w-full grid grid-cols-5 gap-2   justify-center mt-10'>
+                    <div className='w-full grid grid-cols-5 gap-3 text-[#393E46]  justify-center '>
                         {ProgrammingLanguages.map((language , index)=>
-                            <div key={index}  className=' '>
-                                <div className='p-5 flex flex-col items-center'>
+                            <div key={index}  className=' border rounded-lg '>
+                                <div className='p-5 flex flex-col items-center '>
                                     <div style={{color:language.color}} className='text-[100px]'>
                                         {language.icon}
                                     </div>
-                                    <div className='capitalize '>{language.name}</div>
+                                    <div className='capitalize text-sm mt-2'>{language.name}</div>
                                 </div>
                             </div>
                         )}

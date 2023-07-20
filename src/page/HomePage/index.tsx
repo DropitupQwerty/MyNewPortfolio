@@ -1,13 +1,13 @@
 import React from 'react'
-// import { AppNavigationBar } from 'components/AppNavigationBar'
 import myImage from 'assets/myImage2.webp'
-import { BsMouse ,BsDot } from 'react-icons/bs'
+import DynamicBg from 'assets/subtle-prism.svg'
+import {BsDot,} from 'react-icons/bs'
 import {GiDiamonds} from 'react-icons/gi'
-// import {BiLogoJava, BiLogoJavascript, BiLogoReact, BiLogoTypescript} from 'react-icons/bi'
-// import {SiAdobephotoshop} from 'react-icons/si'
 import { AppNavigationBar } from 'components/AppNavigationBar'
-import { AppSkillsCard } from 'components/AppSkillsCard'
-// TbDiamondsFilled ,
+import { SkillsAndLanguages } from 'page/HomePage/SkillAndLanguages'
+import { Projects } from 'page/HomePage/Projects'
+import { MyContacts } from 'page/HomePage/MyContacts'
+
 
 
 const hrefs = [ 
@@ -38,23 +38,27 @@ export const HomePage = () => {
     const handleClickScroll = (id: string) => {
         const element = document.getElementById(id)
         if (element) {
-            // 👇 Will scroll smoothly to the top of the next section
             element.scrollIntoView({ behavior: 'smooth' })
         }
     }
 
 
     return (
-        <div className='relative '>
+        <div className='relative ' >
             <AppNavigationBar/>
-            <div className='h-fit items-center z-0 relative flex ' id='name'>
-                <div className={'h-[100vh] w-full overflow-hidden font-Montserrat  rounded-br-[70px] shadow-md  flex items-center'} 
+            <div className='h-fit items-center z-0 relative flex ' id='name'    
+                style={{
+                    backgroundImage: `url(${DynamicBg})` ,
+                    backgroundSize:'cover',
+                    backgroundRepeat:'no-repeat',
+                }}        
+            >
+                <div className={' relative h-[100vh] w-full overflow-hidden  drop-shadow-sm flex items-center'} 
                     style={{
                         backgroundImage : `url(${myImage})`,
                         backgroundSize:'130vh' ,
                         backgroundRepeat:'no-repeat',
                         backgroundPosition:'60vh -23vh',
-                        backgroundAttachment:'fixed'
                     }}
                 >
                     <div className=' z-20 mx-[70px] tracking-wider w-full '>
@@ -83,40 +87,27 @@ abilities, a keen eye for detail, and a passion for producing high-caliber code.
 
                 </div>
             </div>
-
-            <AppSkillsCard/>
-
-            {/* <div className='font-Montserrat text-center mt-20 text-[30px] text-[#00ADB5]'>
-                    <div>&quot;Programming is the art of algorithm design and the craft of debugging errant code&quot; - Ellen Ullman</div>
-                </div> */}
-
-            <div className='h-[100vh] px-[100px]  w-full font-Montserrat '>
-                <div className='flex  flex-row-reverse justify-between gap-10 items-center my-14'>
-                    <span className='w-[80%] h-[1px] bg-[#00ADB5] '></span>
-                    {/* <span><BsDot/></span> */}
-                    <div className='w-[50vw] '>
-                        <h1 className='text-[50px]  text-[#00ADB5] font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
-                        Thesis Project And Collaborative Projects 
-                        </h1>
-                        {/* <p className='mt-2' >I Build websites with these programming languages , frameworks and Dev Tools . Hoping to gain more a lot of new programming languages and frameworks   </p> */}
+  
+            <div className='px-[100px] py-10 drop-shadow-md'>
+                <div  className=' w-full  flex-col'>
+                    <div className=''>
+                        <h1 className='text-[35px] font-extrabold text-[#4DC5CA] uppercase text-center'>About Me</h1>
                     </div>
                 </div>
-                <div className='px-[100px]'>
-                    <div className='h-[400px] w-[350px] border '>
-
-                    </div>
+                <div className=''>
+                    <p className='text-[22px] text-center text-[#39383D]'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
                 </div>
             </div>
+  
+            <SkillsAndLanguages/>
+            <Projects/>
+        
+            <MyContacts/>
+            {/* <div className='py-10  px-[100px] font-Montserrat text-center mt-20 text-[30px] text-[#00ADB5]'>
+                <div>&quot;Programming is the art of algorithm design and the craft of debugging errant code&quot; - Ellen Ullman</div>
+            </div> */}
+           
 
-            <div className='h-[20vh] '>Get in touch</div>
-
-            {/* Mouse Animation  */}
-            <div className=' bottom-5 flex justify-center w-full z-100 fixed' >
-                <div className='flex flex-col items-center  text-white  animate-bounce'>
-                    <BsMouse className="text-[30px]  filter rotate-180  drop-shadow-md"/>
-                    <span><BsDot/></span>
-                </div>
-            </div>
 
 
             <div className='fixed z-100 flex items-center  top-0 right-4 h-full ' >
