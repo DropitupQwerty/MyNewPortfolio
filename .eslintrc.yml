@@ -37,4 +37,5 @@ ignorePatterns:
     "/*.html",
     "/*.conf",
     "/*.ts",
+    
   ]
