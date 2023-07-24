@@ -1,5 +1,6 @@
 import React from 'react'
 import { pathType } from 'types/pathType'
+import logo from 'assets/myLogo.svg'
 
 type AppNavigationBarProps = { 
     path : pathType[]
@@ -8,7 +9,10 @@ type AppNavigationBarProps = {
 export const AppNavigationBar = (props : AppNavigationBarProps) => {
 
     return (
-        <div className='fixed font-Montserrat w-full bg-white/30 backdrop-blur-lg drop-shadow-lg  top-0 z-50'>            
+        <div className='fixed font-Montserrat w-full bg-white/30 backdrop-blur-lg drop-shadow-lg  top-0 z-50 flex justify-between items-center'>  
+            <div className='h-[50px] mx-5'>
+                <img src={logo} className='h-full'/>
+            </div>          
             <ul className='flex justify-end gap-10'>
                 {props.path.map((NavPath, index)=>
                     <li key={index}>
