@@ -65,12 +65,12 @@ export const SkillsAndLanguages = () => {
 
 
     return (
-        <div className='relative h-[100vh] flex items-centers shadow-md'>
+        <div className='relative h-[100vh] flex items-center bg-[#f5f5f5]  shadow-md'>
             <div className=' px-[100px]  w-full font-Montserrat ' id='knowledge'  >
                 <div className='flex justify-between gap-10 items-center my-14'>
-                    <span className='w-[80%] h-[1px] bg-[#00ADB5] '></span>
-                    <div className='w-[50vw] '>
-                        <h1 className='text-[20px]  text-[#00ADB5] font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
+                    <span className='w-[80%] h-[1px] bg-[#393E46]  '></span>
+                    <div className='w=[50vw]'>
+                        <h1 className='text-[20px]  text-[#393E46] font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
                         Programming Languages , Frameworks and Devtools
                         </h1>
                         <p className='mt-2 text-[#393E46]' >I build websites with these programming languages , frameworks , dev tools and designing tools.</p>
@@ -79,7 +79,7 @@ export const SkillsAndLanguages = () => {
                 <div className='flex px-[100px] items-center'>
                     <div className='w-full grid grid-cols-5 gap-3 text-[#393E46]  justify-center '>
                         {ProgrammingLanguages.map((language , index)=>
-                            <div key={index}  className=' border rounded-lg '>
+                            <div key={index}  className='hover:scale-105 bg-white duration-100  ease-linear  rounded-lg '>
                                 <div className='p-5 flex flex-col items-center '>
                                     <div style={{color:language.color}} className='text-[100px]'>
                                         {language.icon}

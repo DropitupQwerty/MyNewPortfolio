@@ -61,7 +61,7 @@ export const Projects = () => {
                     {/* <span className='w-[80%] h-[1px] bg-[#00ADB5] '></span> */}
                     {/* <span><BsDot/></span> */}
                     <div className=''>
-                        <h1 className='text-[40px]  text-[#00ADB5] font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
+                        <h1 className='text-[40px]  text-[#393E46] font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
                 Thesis Project And Collaborative Projects 
                         </h1>
                         <p className='text-[20px]'>Here you will find some of the personal and clients projects and project that I collaborated with</p>
@@ -83,11 +83,11 @@ export const Projects = () => {
                                 </div>
                                 <div className=' flex flex-col  w-full justify-between bg-white h-[30%] p-4'>
                                     <div className=''>
-                                        <h1 className='font-bold capitalize text-[#4DC5CA] tracking-wide'>{project.name}</h1>
+                                        <h1 className='font-bold capitalize text-[#393E46] tracking-wide'>{project.name}</h1>
                                         <p className='text-[14px] overflow-hidden overflow-ellipsis text-[#393E46] font-mediums'>{project.description}</p>
                                         {/* <p className='text-blue-500 text-[12px] underline '>{project.links}</p> */}
                                     </div>
-                                    <div className='text-sm  flex justify-end' ><h1 className='p-2 border border-[#4DC5CA]  rounded-lg text-[#4DC5CA]  w-fit'>Visit Page</h1></div>
+                                    <div className='text-sm  flex justify-end' ><h1 className='p-2 border border-[#393E46]  rounded-lg text-[#4DC5CA]  w-fit'>Visit Page</h1></div>
                                 </div>
                             </div>    
                         )
@@ -96,7 +96,7 @@ export const Projects = () => {
                 
                 </div>
             </div>
-            <div className='py-[40px] font-Montserrat text-center  text-[30px] text-[#4dc5ca] flex justify-center'>
+            <div className='py-[40px] font-Montserrat text-center  text-[30px] text-[#393E46] flex justify-center'>
                 <div className='flex '><BiSolidQuoteAltLeft/> Mistakes are the seeds from which trees of knowledge grow<BiSolidQuoteAltRight/></div>
             </div>
         </div>
