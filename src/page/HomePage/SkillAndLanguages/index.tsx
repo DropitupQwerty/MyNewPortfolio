@@ -1,11 +1,7 @@
 import React from 'react'
-// import { BsBrush } from 'react-icons/bs'
-// import { BsDot } from 'react-icons/bs'
 import {  BiLogoFirebase, BiLogoJava, BiLogoJavascript, BiLogoReact, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoUnity, BiLogoVisualStudio } from 'react-icons/bi'
 import { SiAdobephotoshop } from 'react-icons/si'
 
-// import { GoTools } from 'react-icons/go'
-// import {MdComputer} from 'react-icons/md'
 
 export const SkillsAndLanguages = () => {
 
@@ -73,7 +69,6 @@ export const SkillsAndLanguages = () => {
             <div className=' px-[100px]  w-full font-Montserrat ' id='knowledge'  >
                 <div className='flex justify-between gap-10 items-center my-14'>
                     <span className='w-[80%] h-[1px] bg-[#00ADB5] '></span>
-                    {/* <span><BsDot/></span> */}
                     <div className='w-[50vw] '>
                         <h1 className='text-[20px]  text-[#00ADB5] font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
                         Programming Languages , Frameworks and Devtools
@@ -93,13 +88,9 @@ export const SkillsAndLanguages = () => {
                                 </div>
                             </div>
                         )}
-
-                    </div>
-                    
+                    </div>  
                 </div>
             </div>
-            
-            
         </div>
 
     )
