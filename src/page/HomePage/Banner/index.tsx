@@ -6,13 +6,13 @@ import DynamicBg from 'assets/subtle-prism.svg'
 export const Banner = () => {
     
     return (
-        <div className='h-fit items-center z-0 relative flex shadow-md  overflow-hidden' id='name'    
+        <div className='h-fit items-center relative flex shadow-md  overflow-hidden' id='name'    
             style={{
                 backgroundImage: `url(${DynamicBg})` ,
                 backgroundSize:'cover',
                 backgroundRepeat:'no-repeat',
             }}>
-            <div className={' relative h-[100vh] w-full overflow-hidden  drop-shadow-sm flex items-center'} 
+            <div className={' relative h-[100vh] w-full overflow-hidden  drop-shadow-md flex items-center'} 
                 style={{
                     backgroundImage : `url(${myImage})`,
                     backgroundSize:'130vh' ,
@@ -26,8 +26,8 @@ export const Banner = () => {
                     <div className='px-5'>
                         <h1 className='font-Sharetechmo font-bold w-fit text-[50px] leading-none'><span className='text-[#393E46]'>Hello I&apos;m </span> </h1>
                         <div  className=''>
-                            <h1 className='font-extrabold text-[90px] filter drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-black to-white leading-none '>Jacob Allen</h1>
-                            <h1 className="font-extrabold text-[90px]  filter drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-black to-white  leading-none "> Valderama</h1>
+                            <h1 className='font-extrabold text-[90px] filter drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-b from-purple-800 to-blue-600 leading-none '>Jacob Allen</h1>
+                            <h1 className="font-extrabold text-[90px]  filter drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-b from-purple-800 to-blue-600  leading-none "> Valderama</h1>
                         </div>
                     </div>
                     <div className=''>
@@ -44,10 +44,7 @@ abilities, a keen eye for detail, and a passion for producing high-caliber code.
                         </div>
                     </div>
                 </div>
-                <div>
                 
-                </div>
-
             </div>
         </div>
     )

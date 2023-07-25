@@ -77,7 +77,7 @@ export const Projects = () => {
                         itemClass='p-1'
                         containerClass='w-[70vw] '>
                         {projects.map((project ,index)=>
-                            <div key={index} className='h-[70vh]  rounded-lg shadow-lg overflow-hidden'>
+                            <div key={index} className='h-[70vh]  rounded-lg shadow-md overflow-hidden'>
                                 <div className='h-[70%] w-full'>
                                     <img src={project.img} className='h-full w-full object-cover' alt="" />
                                 </div>
@@ -87,7 +87,7 @@ export const Projects = () => {
                                         <p className='text-[14px] overflow-hidden overflow-ellipsis text-[#393E46] font-mediums'>{project.description}</p>
                                         {/* <p className='text-blue-500 text-[12px] underline '>{project.links}</p> */}
                                     </div>
-                                    <div className='text-sm  flex justify-end' ><h1 className='p-2 border border-[#393E46]  rounded-lg text-[#4DC5CA]  w-fit'>Visit Page</h1></div>
+                                    <div className='text-sm  flex justify-end' ><h1 className='p-2 border border-[#393E46]   text-[#393E46]  w-fit'>Visit Page</h1></div>
                                 </div>
                             </div>    
                         )

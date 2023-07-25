@@ -4,7 +4,6 @@ import { SkillsAndLanguages } from 'page/HomePage/SkillAndLanguages'
 import { Projects } from 'page/HomePage/Projects'
 import { MyContacts } from 'page/HomePage/MyContacts'
 import { Banner } from 'page/HomePage/Banner'
-// import { AboutMe } from 'page/HomePage/AboutMe'
 import { pathType } from 'types/pathType'
 import { AppSideButtons } from 'components/AppSideButtons'
 // import { Fade ,Slide } from '@mui/material'
@@ -56,7 +55,6 @@ export const HomePage = () => {
         <div className='relative select-none' >
             <AppNavigationBar path={paths}/>
             <Banner/>
-            {/* <AboutMe/> */}
             <SkillsAndLanguages/>
             <Projects/>
             <MyContacts/>
