@@ -5,7 +5,7 @@ import { Projects } from 'page/HomePage/Projects'
 import { MyContacts } from 'page/HomePage/MyContacts'
 import { Banner } from 'page/HomePage/Banner'
 import { pathType } from 'types/pathType'
-import { AppSideButtons } from 'components/AppSideButtons'
+// import { AppSideButtons } from 'components/AppSideButtons'
 // import { Fade ,Slide } from '@mui/material'
 
 
@@ -13,15 +13,15 @@ import { AppSideButtons } from 'components/AppSideButtons'
 const paths: pathType[] = [
     {
         pathname: 'About Me',
-        href:''
+        href:'aboutme'
     },
     {
         pathname: 'Skills',
-        href:''
+        href:'skills'
     },
     {
         pathname: 'Projects',
-        href:''
+        href:'projects'
     },
     {
         pathname: 'Contact',
@@ -58,7 +58,7 @@ export const HomePage = () => {
             <SkillsAndLanguages/>
             <Projects/>
             <MyContacts/>
-            <AppSideButtons path={paths}/>
+            {/* <AppSideButtons path={paths}/> */}
         </div>
     )
 }

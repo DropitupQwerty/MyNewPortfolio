@@ -9,7 +9,7 @@ type AppNavigationBarProps = {
 export const AppNavigationBar = (props : AppNavigationBarProps) => {
 
     return (
-        <div className='fixed font-Montserrat w-full bg-white/30 backdrop-blur-lg drop-shadow-lg  top-0 z-50 flex justify-between items-center'>  
+        <div className='font-Montserrat w-full fixed bg-[#f5f5f5]  top-0 z-50 flex justify-between items-center'>  
             <div className='h-[50px] mx-5'>
                 <a href='/'>
                     <img src={logo} className='h-full'/>
@@ -17,11 +17,11 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
             </div>          
             <ul className='flex justify-end gap-10'>
                 {props.path.map((NavPath, index)=>
-                    <li key={index}>
+                    <a key={index} className='' href={NavPath.href}>
                         <div className='p-5 font-medium hover:drop-shadow-lg text-[#39383D] text-center capitalize text=[#393E46] text-[16px]'>
                             {NavPath.pathname} 
                         </div>
-                    </li>
+                    </a>
                 )}
             </ul>
         </div>

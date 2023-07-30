@@ -81,9 +81,9 @@ export const SkillsAndLanguages = () => {
 
 
     return (
-        <div className='relative py-[100px] min-h-[120vh]   flex items-center bg-[#f5f5f5]  shadow-md'>
+        <div className='relative  min-h-[120vh]   flex flex-col justify-center    items-center bg-[#f5f5f5]' id="skills">
             <AboutMe/>
-            <div className=' px-[100px]   w-full font-Montserrat ' id='knowledge'  >
+            <div className=' px-[100px] py-[50px] w-full font-Montserrat ' id='knowledge'  >
                 <div className='flex justify-between gap-10 items-center my-14'>
                     <span className='w-[80%] h-[1px] bg-[#393E46]  '></span>
                     <div className='w=[50vw]'>
@@ -96,7 +96,7 @@ export const SkillsAndLanguages = () => {
                 <div className='flex px-[100px] items-center'>
                     <div className='w-full grid grid-cols-5 gap-3 text-[#393E46]  justify-center '>
                         {ProgrammingLanguages.map((language , index)=>
-                            <div key={index}  className='hover:scale-105 shadow-md hover:shadow-purple-900/80
+                            <div key={index}  className='hover:scale-105 shadow-md hover:shadow-purple-900
                              bg-white duration-100  ease-linear  rounded-lg '>
                                 <div className='p-5 flex  items-center '>
                                     <div style={{color:language.color}} className='text-[70px] mx-2'>

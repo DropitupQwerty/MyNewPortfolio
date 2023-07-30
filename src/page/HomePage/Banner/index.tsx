@@ -6,7 +6,7 @@ import DynamicBg from 'assets/subtle-prism.svg'
 export const Banner = () => {
     
     return (
-        <div className='h-fit items-center relative flex shadow-md  overflow-hidden' id='name'    
+        <div className='h-fit items-center relative flex' id='aboutme'    
             style={{
                 backgroundImage: `url(${DynamicBg})` ,
                 backgroundSize:'cover',

@@ -50,6 +50,7 @@ const responsive = {
 export const Projects = () => {
     return (
         <div className=' flex items-center flex-col' 
+            id="projects"
             style={{
                 backgroundImage: `url(${DynamicBg})` ,
                 backgroundSize:'cover',
@@ -77,7 +78,7 @@ export const Projects = () => {
                         itemClass='p-1'
                         containerClass='w-[70vw] '>
                         {projects.map((project ,index)=>
-                            <div key={index} className='h-[70vh]  rounded-lg shadow-md overflow-hidden'>
+                            <div key={index} className='h-[70vh]  rounded-lg shadow-md; overflow-hidden'>
                                 <div className='h-[70%] w-full'>
                                     <img src={project.img} className='h-full w-full object-cover' alt="" />
                                 </div>
