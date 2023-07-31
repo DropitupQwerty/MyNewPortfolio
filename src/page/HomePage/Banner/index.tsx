@@ -12,17 +12,17 @@ export const Banner = () => {
                 backgroundSize:'cover',
                 backgroundRepeat:'no-repeat',
             }}>
-            <div className={' relative h-[100vh] w-full overflow-hidden  drop-shadow-md flex items-center'} 
-                style={{
-                    backgroundImage : `url(${myImage})`,
-                    backgroundSize:'130vh' ,
-                    backgroundRepeat:'no-repeat',
-                    backgroundPosition:'60vh -23vh',
-                    // backgroundAttachment:'fixed'
-                }}
-            >
+            <div className={' relative h-[100vh] w-full overflow-hidden justify-evenly  drop-shadow-md flex items-center'} 
+                // style={{
+                //     backgroundImage : `url(${myImage})`,
+                //     backgroundSize:'130vh' ,
+                //     backgroundRepeat:'no-repeat',
+                //     backgroundPosition:'60vh -23vh',
+                //     backgroundAttachment:'fixed'
+                // }}
+            >          
 
-                <div className=' z-20 mx-[70px] tracking-wider w-full '>
+                <div className=' z-20  tracking-wider '>
                     <div className='px-5'>
                         <h1 className='font-Sharetechmo font-bold w-fit text-[50px] leading-none'><span className='text-[#393E46]'>Hello I&apos;m </span> </h1>
                         <div  className=''>
@@ -43,6 +43,10 @@ abilities, a keen eye for detail, and a passion for producing high-caliber code.
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className=''>
+                    <img src={myImage} className='relative h-[100vh] rounded-[40px] object-contain '></img>
                 </div>
                 
             </div>

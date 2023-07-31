@@ -32,18 +32,16 @@ const MySocmed = [
 
 
 export const MyContacts = () => {
+    const myEmail = 'jacoballen.valderama.s@gmail.com'
 
+    const copyEmail = () => {
+        navigator.clipboard.writeText(myEmail)
+        alert(myEmail + ' is Copied')
+    }
 
     return (
       
-        <div className='rounded-t-[50px] flex flex-col items-center justify-evenly'>
-
-            
-            
-
-
-          
-
+        <div className='rounded-t-[50px] flex flex-col items-center justify-evenly'>          
             <div className='flex  items-end justify-start p-5 gap-10  h-full'>
                 <div>
                     <div className='flex  gap-10'>
@@ -60,8 +58,8 @@ export const MyContacts = () => {
                 </div>
                 
             </div>
-            <div className='tracking-wider capitalize text-sm p-2 text-gray-400'>
-                jacob allen valderama
+            <div className='tracking-wider text-sm p-5 text-gray-400'>
+             Email me at  <button onClick={() => copyEmail()} className='text-blue-700 underline'>{myEmail}</button>
             </div>
         </div> 
     )

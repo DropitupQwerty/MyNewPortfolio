@@ -17,7 +17,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
             </div>          
             <ul className='flex justify-end gap-10'>
                 {props.path.map((NavPath, index)=>
-                    <a key={index} className='' href={NavPath.href}>
+                    <a key={index} className='' href={NavPath.href} >
                         <div className='p-5 font-medium hover:drop-shadow-lg text-[#39383D] text-center capitalize text=[#393E46] text-[16px]'>
                             {NavPath.pathname} 
                         </div>
