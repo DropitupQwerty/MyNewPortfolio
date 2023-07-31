@@ -5,19 +5,27 @@ import { BsFacebook, BsInstagram, BsDiscord,  BsGithub, BsLinkedin} from 'react-
 
 const MySocmed = [
     {
-        icon:<BsFacebook/>
+        icon:<BsFacebook/>,
+        link: 'https://www.facebook.com/vjacoballen/',
     },
     {
-        icon:<BsInstagram />
+        icon:<BsInstagram />,
+        link: 'https://www.instagram.com/valderamajacoballen/',
+
     },
     {
-        icon:<BsDiscord />
+        icon:<BsDiscord />,
+        link: 'https://discord.com/users/697003746361606175',
     },
     {
-        icon:<BsGithub />
+        icon:<BsGithub />,
+        link: 'https://github.com/DropitupQwerty',
+
     },
     {
-        icon:<BsLinkedin />
+        icon:<BsLinkedin />,
+        link: 'https://www.linkedin.com/in/jacob-allen-valderama-616743253/',
+
     },
 ]
 
@@ -28,7 +36,7 @@ export const MyContacts = () => {
 
     return (
       
-        <div className='rounded-t-[50px] h-[40vh] flex flex-row-reverse items-center justify-evenly'>
+        <div className='rounded-t-[50px] flex flex-col items-center justify-evenly'>
 
             
             
@@ -41,15 +49,19 @@ export const MyContacts = () => {
                     <div className='flex  gap-10'>
                         {
                             MySocmed.map((coms, index)=> 
-                                <div key={index} className='text-[#393E46]  text-[20px]'>
+                                <a href={coms.link} target='_blank' key={index} className='text-[#393E46]  text-[20px] hover:scale-105  hover:drop-shadow-xl ' rel="noreferrer">
                                     {coms.icon}
-                                </div>)
+                                </a>)
                         }
                 
                     </div>
 
          
                 </div>
+                
+            </div>
+            <div className='tracking-wider capitalize text-sm p-2 text-gray-400'>
+                jacob allen valderama
             </div>
         </div> 
     )
