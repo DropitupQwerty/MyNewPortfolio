@@ -47,7 +47,7 @@ const responsive = {
 
 export const Projects = () => {
     return (
-        <div className=' flex items-center flex-col' id="projects" >
+        <div className=' items-center flex-col hidden md:flex' id="projects" >
             <div className='mb-[70px] px-[30px] md:px-[100px]  w-full font-Montserrat '>
                 <div className='flex  flex-row-reverse justify-center gap-10 items-center my-14'>
                     <div className=''>
@@ -57,14 +57,13 @@ export const Projects = () => {
                         <p className='text-[16px] md:text-[20px]'>Here you will find some of the personal and clients projects and project that I collaborated with</p>
                     </div>
                 </div>
-                <div className='flex gap-4 justify-center z-[10]'>
+                <div className='flex gap-4 justify-center z-[10] rounded-lg shadow-md p-10 bg-white'>
                     <Carousel 
                         responsive={responsive}  
                         transitionDuration={300}
                         autoPlay={true}
                         infinite={true}
                         itemClass='p-1'
-                        
                         containerClass='md:w-[70vw]'>
                         {projects.map((project ,index)=>
                             <div key={index} className='h-fit  rounded-lg shadow-md; overflow-hidden'>

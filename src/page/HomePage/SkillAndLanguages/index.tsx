@@ -1,4 +1,4 @@
-import { AboutMe } from 'page/HomePage/AboutMe'
+// import { AboutMe } from 'page/HomePage/AboutMe'
 import React from 'react'
 import {  BiLogoCss3, BiLogoFirebase, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoUnity, BiLogoVisualStudio } from 'react-icons/bi'
 import { SiAdobeillustrator, SiAdobephotoshop, SiMysql } from 'react-icons/si'
@@ -91,13 +91,12 @@ export const SkillsAndLanguages = () => {
 
 
     return (
-        <div className='relative min-h-[120vh]   flex flex-col justify-center    items-center bg-[#f5f5f5]' >
-            <AboutMe/>
-            <div className='px-[30px] md:px-[100px] py-[50px] w-full font-Montserrat '  id="skills"  >
+        <div className='relative flex flex-col justify-center    items-center bg-[#f5f5f5]' >
+            <div className='px-[30px] md:px-[100px]  py-[50px] w-full font-Montserrat  min-h-screen '  id="skills"  >
                 <div className='flex justify-between gap-10 items-center my-14'>
                     <span className='w-[80%] h-[1px] bg-[#393E46]  hidden md:block'></span>
-                    <div className='w=[50vw]'>
-                        <h1 className='text-[20px]  text-transparent bg-gradient-to-t from-purple-900 to-blue-900 font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
+                    <div className='text-center md:text-start '>
+                        <h1 className='text-[20px] text-transparent bg-gradient-to-t from-purple-900 to-blue-900 font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
                         Programming Languages , Frameworks and Devtools.
                         </h1>
                         <p className='mt-2 text-[#393E46]' >I build websites with these programming languages , frameworks , dev tools and designing tools.</p>

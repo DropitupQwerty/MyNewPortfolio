@@ -2,7 +2,7 @@ import React from 'react'
 
 export const AboutMe = () => {
     return (
-        <div className='z-20 w-full md:flex justify-center hidden '>
+        <div className='z-20 w-full md:flex justify-center hidden my-10'>
             <div className='shadow-sm md:w-[80%] bg-white rounded-lg  p-10'>
                 <p className='text-[20px] font-medium text-center text-[#39383D]'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
             </div>
