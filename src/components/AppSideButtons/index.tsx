@@ -1,37 +1,40 @@
 import React from 'react'
 import { BsDot } from 'react-icons/bs'
-import { GiDiamonds } from 'react-icons/gi'
-import { pathType } from 'types/pathType'
-
-
-type AppSideButtonsProps = {
-    path : pathType[]
-}
+import { ScrollPosition } from 'types/scrollPosition'
+import { handleScrollToId } from 'utilities'
+import { paths } from 'utilities/Paths'
 
 
 
 
-export const AppSideButtons = (props : AppSideButtonsProps) => {
 
-    const handleClickScroll = (id: string) => {
-        const element = document.getElementById(id)
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
+export const AppSideButtons = () => {
 
+    const pageHeight = document.documentElement.scrollHeight 
+    const pagePercent =  pageHeight - ScrollPosition() 
+    const percent = (pagePercent / pageHeight ) * 100
 
     return (
-        <div className='fixed z-100 flex items-center  top-0 right-4 h-full ' >
-            <div className='flex flex-col gap-5 items-center'>
-                <span><BsDot/></span>
-                <span className='h-[40px] w-[2px] bg-[#393E46]'></span>
-                {props.path.map((href ,index)=>
-                    <button onClick={()=>handleClickScroll(href.href)} key={index} >
-                        <span><GiDiamonds className="text-xl hover:stroke-black filter drop-shadow-lg hover:scale-125 ease-in-out text-[#393E46] duration-300 hover:opacity-50 "/></span>
-                    </button>)}
-                <span className='h-[40px] w-[2px] bg-[#393E46]'></span>
-                <span><BsDot/></span>
+        <div className='fixed z-100 md:flex items-center  right-5 h-full z-[999] hidden' >
+            <div className='flex flex-col items-center justify-center h-screen w-[200px]'>
+                <BsDot className='text-[30px]'/>
+                <div  className={'relative rounded-lg w-[7px] my-4 bg-purple-900   '}  style={{height:`${(100 - percent) }%`}}  >
+                </div>
+                <div >
+                    {paths.map((path, index)=>
+                        <div key={index}>
+                            { path.scrollPos <= ScrollPosition() && path.pathname.toLowerCase() !== 'my resume' &&
+                                <button  onClick={()=>handleScrollToId(path.href)} className='my-2 flex flex-col duration-1000 transition-all'>
+                                    {path.pathname}
+                                    <span className='h-[4px] mt-1 w-[50%] rounded-full  bg-purple-900'></span>
+                                </button >
+                            }
+                        </div>)}
+                </div>
+                <div  className={'relative rounded-lg w-[7px] my-4 bg-purple-900   '}  style={{height:`${(100 - percent) }%`}}  >
+
+                </div>
+                <BsDot  className='text-[30px]'/>
             </div>
         </div>
     )

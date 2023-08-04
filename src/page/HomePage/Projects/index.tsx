@@ -3,8 +3,6 @@ import reskyutBg from 'assets/projects/reskyutMainPage.png'
 import healthcare from 'assets/projects/healthcareImage.png'
 import yokai from 'assets/projects/yokai.png'
 import Carousel from 'react-multi-carousel'
-import  DynamicBg  from 'assets/subtle-prism.svg'
-import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from 'react-icons/bi'
 
 const projects = [
     {
@@ -36,8 +34,8 @@ const responsive = {
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2,
-        slidesToSlide: 2 // optional, default to 1.
+        items: 1,
+        slidesToSlide: 1 // optional, default to 1.
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
@@ -49,34 +47,25 @@ const responsive = {
 
 export const Projects = () => {
     return (
-        <div className=' flex items-center flex-col' 
-            id="projects"
-            style={{
-                backgroundImage: `url(${DynamicBg})` ,
-                backgroundSize:'cover',
-                backgroundRepeat:'no-repeat',
-            }} 
-        >
-            <div className='mb-[70px] px-[100px]  w-full font-Montserrat '>
+        <div className=' flex items-center flex-col' id="projects" >
+            <div className='mb-[70px] px-[30px] md:px-[100px]  w-full font-Montserrat '>
                 <div className='flex  flex-row-reverse justify-center gap-10 items-center my-14'>
-                    {/* <span className='w-[80%] h-[1px] bg-[#00ADB5] '></span> */}
-                    {/* <span><BsDot/></span> */}
                     <div className=''>
-                        <h1 className='text-[40px]  text-[#393E46] font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
-                Thesis Project And Collaborative Projects 
+                        <h1 className='text-[20px] md:text-[40px] text-transparent bg-gradient-to-t from-purple-900 to-blue-900 font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
+                Thesis Project And Collaborative Projects.
                         </h1>
-                        <p className='text-[20px]'>Here you will find some of the personal and clients projects and project that I collaborated with</p>
-                        {/* <p className='mt-2' >I Build websites with these programming languages , frameworks and Dev Tools . Hoping to gain more a lot of new programming languages and frameworks   </p> */}
+                        <p className='text-[16px] md:text-[20px]'>Here you will find some of the personal and clients projects and project that I collaborated with</p>
                     </div>
                 </div>
-                <div className='flex gap-4 justify-center '>
+                <div className='flex gap-4 justify-center z-[10]'>
                     <Carousel 
                         responsive={responsive}  
                         transitionDuration={300}
                         autoPlay={true}
                         infinite={true}
                         itemClass='p-1'
-                        containerClass='w-[70vw] '>
+                        
+                        containerClass='md:w-[70vw]'>
                         {projects.map((project ,index)=>
                             <div key={index} className='h-[70vh]  rounded-lg shadow-md; overflow-hidden'>
                                 <div className='h-[70%] w-full'>
@@ -84,11 +73,11 @@ export const Projects = () => {
                                 </div>
                                 <div className=' flex flex-col  w-full justify-between bg-white h-[30%] p-4'>
                                     <div className=''>
-                                        <h1 className='font-bold capitalize text-[#393E46] tracking-wide'>{project.name}</h1>
+                                        <a  href={project.links} className=' hover:underline font-bold capitalize text-[#393E46] tracking-wide'>{project.name}</a>
                                         <p className='text-[14px] overflow-hidden overflow-ellipsis text-[#393E46] font-mediums'>{project.description}</p>
                                         {/* <p className='text-blue-500 text-[12px] underline '>{project.links}</p> */}
                                     </div>
-                                    <div className='text-sm  flex justify-end' ><h1 className='p-2 border border-[#393E46]   text-[#393E46]  w-fit'>Visit Page</h1></div>
+                                    <a className='text-sm  flex justify-end' href={project.links} target='_blank' rel="noreferrer"><h1 className='px-5 py-3 w-full md:w-fit text-center border rounded-lg hover:bg-gradient-to-t from-purple-900 to-blue-900 hover:text-white  duration-150 ease-in-out border-[#393E46]   text-[#393E46]  '>Visit Page</h1></a>
                                 </div>
                             </div>    
                         )
@@ -96,9 +85,6 @@ export const Projects = () => {
                     </Carousel>
                 
                 </div>
-            </div>
-            <div className='py-[40px] font-Montserrat text-center  text-[30px] text-[#393E46] flex justify-center'>
-                <div className='flex '><BiSolidQuoteAltLeft/> Mistakes are the seeds from which trees of knowledge grow<BiSolidQuoteAltRight/></div>
             </div>
         </div>
 
