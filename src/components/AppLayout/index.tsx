@@ -1,5 +1,7 @@
 import React from 'react'
 import  DynamicBg  from 'assets/subtle-prism.svg'
+
+// import { useOnScreen } from 'utilities/UseOnScreen'
 // import { AppSideButtons } from 'components/AppSideButtons'
 
 type AppLayoutProps = { 
@@ -8,8 +10,11 @@ type AppLayoutProps = {
 
 
 export const AppLayout = (props : AppLayoutProps) => {
+
+  
+
     return (
-        <div className={'transition-all duration-700 ease-linear '}>
+        <div >
             <div
                 className='relative select-none' 
                 style={{
@@ -21,6 +26,8 @@ export const AppLayout = (props : AppLayoutProps) => {
                 {props.children}
             
             </div>
+        
+
             
         </div>
     )
