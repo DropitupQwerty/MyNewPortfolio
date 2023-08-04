@@ -47,7 +47,7 @@ const responsive = {
 
 export const Projects = () => {
     return (
-        <div className=' items-center flex-col hidden md:flex' id="projects" >
+        <div className=' items-center flex-col flex' id="projects" >
             <div className='mb-[70px] px-[30px] md:px-[100px]  w-full font-Montserrat '>
                 <div className='flex  flex-row-reverse justify-center gap-10 items-center my-14'>
                     <div className=''>
