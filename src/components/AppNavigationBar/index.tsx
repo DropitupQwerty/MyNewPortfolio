@@ -14,11 +14,11 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
 
     return (
         <div className=''>
-            <div className='h-[60px] absolute m-5 md:hidden '>
+            {/* <div className='h-[60px] absolute m-5 md:hidden '>
                 <a href='/'>
                     <img src={logo} className='h-full '/>
                 </a>
-            </div> 
+            </div>  */}
             <div className='fixed z-[99999] flex top-0 justify-end w-full'> 
                 <button className={'flex flex-col gap-2  p-2 m-5  rounded  md:hidden '} onClick={()=> setOpen(!open)}>
                     <span className={`h-[4px] rounded-full w-[30px] bg-[#39383D] transition-all duration-400 ease-in transform ${open ?'rotate-[225deg] translate-y-3 ' : 'rotate-0 translate-y-0'}`}></span>
@@ -47,7 +47,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                 <div className=' flex flex-col items-center md:hidden'>
 
                     <div>
-    Visit My Account
+    Visit My Accounts
                     </div>
                     <div className='flex gap-5 p-5'>
                         {

@@ -67,7 +67,7 @@ export const Projects = () => {
                         
                         containerClass='md:w-[70vw]'>
                         {projects.map((project ,index)=>
-                            <div key={index} className='h-[70vh]  rounded-lg shadow-md; overflow-hidden'>
+                            <div key={index} className='h-fit  rounded-lg shadow-md; overflow-hidden'>
                                 <div className='h-[70%] w-full'>
                                     <img src={project.img} className='h-full w-full object-cover' alt="" />
                                 </div>

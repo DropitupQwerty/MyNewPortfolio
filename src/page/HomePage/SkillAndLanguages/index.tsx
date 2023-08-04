@@ -109,7 +109,7 @@ export const SkillsAndLanguages = () => {
                             <div key={index}  className='hover:scale-105 shadow-md hover:shadow-purple-900
                              bg-white duration-100  ease-linear  rounded-lg '>
                                 <div className='p-5 flex  items-center flex-col xl:flex-row overflow-hidden  w-full'>
-                                    <div style={{color:language.color}} className='text-[70px] mx-2 '>
+                                    <div style={{color:language.color}} className='text-[50px] md:text-[70px] mx-2 '>
                                         {language.icon}
                                     </div>
                                     <div className='capitalize text-sm mt-2 font-medium  md:block '>{language.name}</div>
