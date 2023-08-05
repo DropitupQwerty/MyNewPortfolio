@@ -30,7 +30,7 @@ export const SkillsAndLanguages = () => {
                                     <div style={{color:language.color}} className='text-[50px] md:text-[70px] mx-2 '>
                                         {language.icon}
                                     </div>
-                                    <div className='capitalize text-sm mt-2 font-medium  md:block tracking-wide'>{language.name}</div>
+                                    <div className='lowercase text-sm mt-2 font-medium  md:block tracking-wide'>{language.name}</div>
                                 </div>
                             </a>
                         }

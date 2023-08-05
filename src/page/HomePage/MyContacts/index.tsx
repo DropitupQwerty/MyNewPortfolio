@@ -41,7 +41,7 @@ export const MyContacts = () => {
                 </div>
                 
             </div>
-            <div className='text-[14px] p-2 text-gray-400 '>Portfolio Created by Jacob Allen Valderama</div>
+            <div className='text-[14px] p-2 text-gray-400 '>Portfolio Created by © Jacob Allen Valderama</div>
         </div> 
     )
 }

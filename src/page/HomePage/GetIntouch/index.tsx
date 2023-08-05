@@ -45,7 +45,7 @@ export const GetInTouch = () => {
                         <div className='text-[40px] lg:text-[70px] font-extrabold bg-clip-text text-transparent bg-gradient-to-t from-purple-900 to-blue-900'>Email me here.</div>
                     </div>
 
-                    <div className={twMerge('text-[20px] text-[#39383D]','duration-1000 transition-all ', currrentView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full')}>if you have any questions or would like to work with me, please feel free to email me and say hello!</div>
+                    <div  ref={ref} className={twMerge('text-[20px] text-[#39383D]','duration-1000 transition-all ', currrentView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full')}>if you have any questions or would like to work with me, please feel free to email me and say hello!</div>
                     <form ref={formRef} onSubmit={(e)=>sendEmail(e)}>
                         <div  className='flex flex-col gap-5 mt-10'>
                             <input id="email" required name='email' className={twMerge('  w-full p-4 border  rounded-lg focus:shadow-purple-900 focus:shadow outline-none','duration-1000 transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Enter your Email Address'/>
@@ -54,7 +54,7 @@ export const GetInTouch = () => {
                             <textarea name='message' required rows={5} className={twMerge('resize-none border rounded-lg p-4 focus:shadow-purple-900 focus:shadow outline-none','duration-[1900ms] transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Message... '/>
                             {isSending && <span className='text-green-600 flex gap-2 items-center'>Message Send <BiCheckCircle/></span>}
                             {isError && <span className='text-red-600 flex gap-2 items-center'>Error Sending Message <BsExclamationCircle/></span>}
-                            <div ref={ref} className={twMerge('w-full flex justify-center','duration-1000 transition-all ', currrentView ? 'opacity-100' : 'opacity-0')}>
+                            <div  className={twMerge('w-full flex justify-center','duration-1000 transition-all ', currrentView ? 'opacity-100' : 'opacity-0')}>
                                 <button type="submit" disabled={ !!isSending} className={twMerge(' rounded-lg   p-3 w-full bg-gradient-to-t from-purple-900 to-blue-900 text-white ', isSending && 'cursor-not-allowed opacity-25')}>{'Send'}</button>
                             </div>
                         </div> 
