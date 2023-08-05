@@ -11,7 +11,7 @@ export const SkillsAndLanguages = () => {
     const currentView = useOnScreen(ref)
     return (
         <div   className='relative flex flex-col justify-center   overflow-hidden  items-center '  >
-            <div className='px-[30px] md:px-[100px]  py-[50px] w-full font-Montserrat  min-h-screen '  id="skills"  >
+            <div className='px-[30px] md:px-[125px]  py-[50px] w-full font-Montserrat  min-h-screen '  id="skills"  >
                 <div className='flex justify-between gap-10 items-center my-14'  >
                     <span className={twMerge('w-[80%] h-[1px] bg-[#393E46] transition-all duration-1000 hidden md:block' , currentView  ? '' : 'w-0')}></span>
                     <div  className={twMerge(' leading-1 md:text-start transition-all duration-[1400ms] md:w-[40vw] text-justify' , currentView ? 'translate-x-0 opacity-100'  : 'translate-x-full opacity-0'  )} >

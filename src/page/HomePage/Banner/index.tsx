@@ -14,11 +14,11 @@ export const Banner = () => {
     return (
         <div ref={ref} className='h-fit items-center relative flex' id='aboutme'    
         >
-            <div className={' relative  sm:min-h-screen  w-full overflow-hidden  items-center   drop-shadow-md flex flex-col sm:flex-row  sm:items-end  lg:items-center '} 
+            <div className={' relative  sm:min-h-screen rounded-2xl  w-full overflow-hidden  items-center   drop-shadow-md flex flex-col sm:flex-row  sm:items-end  lg:items-center '} 
             >          
-                <div className='transition-all duration-1000 flex  sm:absolute mt-[20vh] sm:mt-0 w-screen h-full'>
+                <div className='transition-all  duration-1000 flex  sm:absolute mt-[20vh] sm:mt-0 w-screen h-full'>
                     <div className=' rounded-full sm:rounded-none overflow-hidden sm:overflow-visible  h-[30vh] w-[30vh] sm:w-full  mx-auto sm:mx-0 transition-all duration-1000 relative sm:left-0 lg:left-[40%] sm:bottom-[50%] md:bottom-[40%] lg:bottom-[30%]'>
-                        <img src={myImage} className={twMerge(' sm:w-[70%%] object-contain sm:h-[220vh] transition-all duration-[1700ms]' , currentView ? 'opacity-100' : 'opacity-0')}/>
+                        <img src={myImage} className={twMerge('rounded-full sm:w-[70%%] object-contain sm:h-[220vh] transition-all duration-[1700ms]' , currentView ? 'opacity-100' : 'opacity-0')}/>
                     </div>
                 </div>
 
