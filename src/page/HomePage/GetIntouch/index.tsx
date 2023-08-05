@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import { useOnScreen } from 'utilities/UseOnScreen'
 import emailJs from '@emailjs/browser'
 import { twMerge } from 'tailwind-merge'
 import { useOnScreen } from 'utilities/UseOnScreen'
+import { BiCheckCircle } from 'react-icons/bi'
+import { BsExclamationCircle } from 'react-icons/bs'
 
 
 
@@ -14,18 +16,21 @@ export const GetInTouch = () => {
     const ref = React.useRef<HTMLDivElement>(null)
     const currrentView = useOnScreen(ref)
     const formRef =  React.useRef<HTMLFormElement | null>(null)
+    const [isSending , setIsSending] = useState('')
+    const [isError, setIsError] = useState('')
     
     const sendEmail  = (e : React.FormEvent) => { 
         e.preventDefault()
         console.log(formRef.current)
-
         emailJs.sendForm(Service_ID , emailTemplate , formRef.current as HTMLFormElement , publicKey)
             .then((result)=> {
                 console.log(result.text)
-                window.location.reload()
+                setIsSending(result.text)            
             }
-            ).catch((error)=>
+            ).catch((error)=>{
                 console.log(error)
+                setIsError(error)
+            }
             )
     }
 
@@ -45,8 +50,10 @@ export const GetInTouch = () => {
                             <input id="name" required name='name' className={twMerge('w-full p-4 border  rounded-lg focus:shadow-purple-900 focus:shadow outline-none','duration-[1300ms] transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Enter your Name'/>
                             <input id="subject" required name='subject' className={twMerge('w-full p-4 border  rounded-lg focus:shadow-purple-900 focus:shadow outline-none','duration-[1600ms] transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Enter Subject'/>
                             <textarea name='message' required rows={5} className={twMerge('resize-none border rounded-lg p-4 focus:shadow-purple-900 focus:shadow outline-none','duration-[1900ms] transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Message... '/>
+                            {isSending && <span className='text-green-600 flex gap-2 items-center'>Message Send <BiCheckCircle/></span>}
+                            {isError && <span className='text-red-600 flex gap-2 items-center'>Error Sending Message <BsExclamationCircle/></span>}
                             <div className={twMerge('w-full flex justify-center','duration-1000 transition-all ', currrentView ? 'opacity-100' : 'opacity-0')}>
-                                <button type="submit" className=' rounded-lg   p-3 w-full bg-gradient-to-t from-purple-900 to-blue-900 text-white '>Submit</button>
+                                <button type="submit" disabled={!!isError || !!isSending} className={twMerge(' rounded-lg   p-3 w-full bg-gradient-to-t from-purple-900 to-blue-900 text-white ',isError || isSending && 'cursor-not-allowed opacity-25')}>{isSending?'Sending' : 'Submit'}</button>
                             </div>
                         </div> 
                     </form>
