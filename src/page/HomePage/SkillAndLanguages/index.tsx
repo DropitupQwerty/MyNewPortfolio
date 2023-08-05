@@ -10,7 +10,7 @@ export const SkillsAndLanguages = () => {
     const ref = React.useRef<HTMLDivElement>(null)
     const currentView = useOnScreen(ref)
     return (
-        <div   className='relative flex flex-col justify-center   overflow-hidden  items-center bg-[#f5f5f5]'  >
+        <div   className='relative flex flex-col justify-center   overflow-hidden  items-center '  >
             <div className='px-[30px] md:px-[100px]  py-[50px] w-full font-Montserrat  min-h-screen '  id="skills"  >
                 <div className='flex justify-between gap-10 items-center my-14'  >
                     <span className={twMerge('w-[80%] h-[1px] bg-[#393E46] transition-all duration-1000 hidden md:block' , currentView  ? '' : 'w-0')}></span>
