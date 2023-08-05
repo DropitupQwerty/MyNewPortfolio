@@ -7,7 +7,7 @@ import { Banner } from 'page/HomePage/Banner'
 import { GetInTouch } from 'page/HomePage/GetIntouch'
 import { paths } from 'utilities/Paths'
 import { AppLayout } from 'components/AppLayout'
-import { AboutMe } from 'page/HomePage/AboutMe'
+// import { AboutMe } from 'page/HomePage/AboutMe'
 
 
 
@@ -21,7 +21,7 @@ export const HomePage = () => {
         <AppLayout >
             <AppNavigationBar path={paths}/>
             <Banner/>
-            <AboutMe/>
+            {/* <AboutMe/> */}
             <SkillsAndLanguages/>
             <Projects/> 
             <GetInTouch/>
