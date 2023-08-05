@@ -18,14 +18,16 @@ import { AppLayout } from 'components/AppLayout'
 export const HomePage = () => {
 
     return (
-        <AppLayout >
+        <div>
             <AppNavigationBar path={paths}/>
             <Banner/>
             {/* <AboutMe/> */}
-            <SkillsAndLanguages/>
-            <Projects/> 
-            <GetInTouch/>
-            <MyContacts />
-        </AppLayout>
+            <AppLayout >
+                <SkillsAndLanguages/>
+                <Projects/> 
+                <GetInTouch/>
+                <MyContacts />
+            </AppLayout>
+        </div>
     )
 }

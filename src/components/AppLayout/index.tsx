@@ -13,7 +13,7 @@ export const AppLayout = (props : AppLayoutProps) => {
     return (
         <div >
             <div
-                className='relative select-none overflow-hiddens' 
+                className='relative select-none overflow-hidden divide-y-[2px]' 
                 style={{
                     // backgroundImage: `url(${DynamicBg})` ,
                     // backgroundSize:'cover',

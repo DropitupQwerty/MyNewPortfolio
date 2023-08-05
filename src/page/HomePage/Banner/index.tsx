@@ -14,7 +14,7 @@ export const Banner = () => {
     return (
         <div ref={ref} className='h-fit items-center relative flex' id='aboutme'    
         >
-            <div className={' relative  sm:min-h-screen rounded-2xl  w-full overflow-hidden  items-center   drop-shadow-md flex flex-col sm:flex-row  sm:items-end  lg:items-center '} 
+            <div className={' relative  sm:min-h-screen rounded-b-2xl  w-full overflow-hidden  items-center   drop-shadow-md flex flex-col sm:flex-row  sm:items-end  lg:items-center '} 
             >          
                 <div className='transition-all  duration-1000 flex  sm:absolute mt-[20vh] sm:mt-0 w-screen h-full'>
                     <div className=' rounded-full sm:rounded-none overflow-hidden sm:overflow-visible  h-[30vh] w-[30vh] sm:w-full  mx-auto sm:mx-0 transition-all duration-1000 relative sm:left-0 lg:left-[40%] sm:bottom-[50%] md:bottom-[40%] lg:bottom-[30%]'>
@@ -26,10 +26,9 @@ export const Banner = () => {
                     <div className='hidden md:block'> 
                         <h1 className='text-2xl md:text-3xl font-medium'> Hello I&apos;m</h1>
                     </div>
-                    <div className='font-extrabold text-2xl  flex justify-center md:block   md:text-7xl filter bg-gradient-to-t from-purple-900 to-blue-900  bg-clip-text text-transparent'> 
-                        <h1 className=''> Jacob Allen Valderama</h1>
-                    </div>
-                   
+                    <div className='font-extrabold text-2xl  flex justify-center md:block   md:text-6xl filter bg-gradient-to-t from-purple-900 to-blue-900  bg-clip-text text-transparent'> 
+                        <h1 className='xl:whitespace-nowrap'> Jacob Allen Valderama</h1>
+                    </div>   
                     <div className='mt-5'>
                         <h1 className='text-xl font-medium md:text-3xl text-[#393E46] tracking-wider '>
                       Front-end Developer 
@@ -40,7 +39,7 @@ popular frameworks such as React TS and JS. outstanding debugging and issue-solv
 abilities, a keen eye for detail, and a passion for producing high-caliber code.
                             </p>
                         </div>
-                    </div>
+                    </div>               
                 </div>
 
 
