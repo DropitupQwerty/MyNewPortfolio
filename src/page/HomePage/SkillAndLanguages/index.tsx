@@ -27,8 +27,9 @@ export const SkillsAndLanguages = () => {
                         {
                          
 
-                            return <a href={language.link} target='_blank' key={index}  className={twMerge('hover:scale-105 shadow-md hover:shadow-purple-900 duration-100 bg-white  rounded-lg ' )} rel="noreferrer">
-                                <div className={twMerge('p-5 flex  items-center flex-col xl:flex-row overflow-hidden  w-full transition-all ease-in-out',currentView ? 'opacity-100 ' : 'opacity-0' )} style={{transitionDuration : `${(index*200) + 1000}ms` }}>
+                            return <a href={language.link} target='_blank' key={index}  className={twMerge('hover:scale-105 overflow-hidden relative hover:bg-gray-200 shadow-md hover:shadow-purple-900 duration-100 bg-white  rounded-lg ' )} rel="noreferrer">
+                                {/* <div className='duration-1000 transition-all absolute w-[200%] border -translate-x-1/2 hover:translate-x-0 bg-transparent hover:bg-white z-[9999] h-full'></div> */}
+                                <div className={twMerge('p-5 flex  items-center flex-col xl:flex-row overflow-hidden  w-full transition-all ease-in-out',currentView ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10' )} style={{transitionDuration : `${(index*200) + 1000}ms` }}>
                                     <div style={{color:language.color}} className='text-[50px] md:text-[70px] mx-2 '>
                                         {language.icon}
                                     </div>

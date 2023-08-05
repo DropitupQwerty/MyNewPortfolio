@@ -39,7 +39,7 @@ export const GetInTouch = () => {
                         <div className='text-[40px] lg:text-[70px] font-extrabold bg-clip-text text-transparent bg-gradient-to-t from-purple-900 to-blue-900'>Email me here.</div>
                     </div>
 
-                    <div className={twMerge('text-[20px] text-[#39383D]','duration-1000 transition-all ', currrentView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full')}>Want to work with me? Message me now!</div>
+                    <div className={twMerge('text-[20px] text-[#39383D]','duration-1000 transition-all ', currrentView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full')}>if you have any questions or would like to work with me, please feel free to email me and say hello!</div>
                     <form ref={formRef} onSubmit={(e)=>sendEmail(e)}>
                         <div className='flex flex-col gap-5 mt-10'>
                             <input id="email"  name='email' className={twMerge('  w-full p-4 border  rounded-lg focus:shadow-purple-900 focus:shadow outline-none','duration-1000 transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Enter your Email Address'/>
