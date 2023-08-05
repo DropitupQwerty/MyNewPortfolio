@@ -35,14 +35,19 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                     </a>
                 </div>          
                 <ul className='flex mt-20 md:mt-0 p-6 md:p-0 justify-end md:gap-10 w-full flex-col md:flex-row '>
-                    {props.path.map((NavPath, index)=>
-                        <button key={index} onClick={()=>{handleScrollToId(NavPath.href)
+                    {props.path.map((NavPath, index)=> NavPath.pathname.toLowerCase() !== 'my resume' ?
+                        <button key={index} onClick={()=>{
+                            handleScrollToId(NavPath.href)
                             setOpen(false)}} >
                             <div className='p-3 md:p-5 border-b-2 flex flex-col lowercase md:border-none font-medium hover:drop-shadow-lg  text-[#39383D] text-start md:text-center text=[#393E46] text-[16px]'>
                                 {NavPath.pathname} 
                             </div>
-                      
-                        </button>
+                        </button> :
+                        <a key={index}  href={NavPath.href} target='_blank' rel="noreferrer">
+                            <div className='p-3 md:p-5 border-b-2 flex flex-col lowercase md:border-none font-medium hover:drop-shadow-lg  text-[#39383D] text-start md:text-center text=[#393E46] text-[16px]'>
+                                {NavPath.pathname} 
+                            </div>
+                        </a>
                     )}
                 </ul>
                 <div className=' flex flex-col items-center md:hidden'>
@@ -59,6 +64,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                         }
                     </div>
                 </div>
+
             </div>
         </div>
     )

@@ -23,7 +23,7 @@ export const paths: pathType[] = [
     },
     {
         pathname: 'My Resume',
-        href:'',
+        href:'https://drive.google.com/file/d/1e9yyi60UF_SybvuHgRfyTUvc4Zq0i0dO/view?usp=sharing',
         scrollPos: 666,
     },
 ]

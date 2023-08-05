@@ -5,7 +5,9 @@ import { MySocmed } from 'utilities/Social'
 
 
 
+
 export const MyContacts = () => {
+
 
     return (
       
@@ -26,9 +28,6 @@ export const MyContacts = () => {
                 </div>
                 
             </div>
-            {/* <div className='tracking-wider text-sm p-5 text-gray-400 flex items-center'>
-               Email me at    <SiGmail className='mx-2 mr-1'/><button onClick={() => copyEmail()} className='text-blue-700 underline'> {myEmail}</button>
-            </div> */}
         </div> 
     )
 }
