@@ -13,7 +13,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
 
 
     return (
-        <div className=''>
+        <div className='h-screen'>
             <div className='absolute m-5 md:hidden '>
                 <a href='/' className='flex items-center font-bold gap-2'>
                     <img src={logo} className='h-[60px] '/>
