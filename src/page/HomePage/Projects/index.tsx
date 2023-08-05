@@ -48,7 +48,7 @@ export const Projects = () => {
                         <p className='text-[16px] md:text-[20px]'>Here you will find some of the personal and clients projects and project that I collaborated with</p>
                     </div>
                 </div>
-                <div ref={ref} className='grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center z-[10] rounded-lg lg:p-10'>
+                <div ref={ref} className='grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center z-[10] rounded-lg lg:p-10 overflow-hidden'>
 
                     {projects.map((project, index)=> 
                         <div key={index} className={`duration-1000 transition-all ${currentView ? 'translate-x-0 opacity-100' : index + 1 % 2 == 0 ? '-translate-x-10 opacity-0' :'translate-x-10 opacity-0'}`} style={{transitionDuration : `${(index*1)}s` }}>

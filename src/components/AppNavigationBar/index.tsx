@@ -17,7 +17,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
             <div className='absolute m-5 md:hidden '>
                 <a href='/' className='flex items-center font-bold gap-2'>
                     <img src={logo} className='h-[60px] '/>
-                    Jacob Allen Valderama Portfolio
+                   
                 </a>
             </div> 
             <div className='fixed z-[99999] flex top-0 justify-end w-full '> 
