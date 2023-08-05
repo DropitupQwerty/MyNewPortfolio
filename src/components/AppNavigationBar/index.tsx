@@ -34,7 +34,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                         <img src={logo} className='h-full '/>
                     </a>
                 </div>          
-                <ul className='flex mt-20 md:mt-0 p-6 md:p-0 justify-end md:gap-10 w-full flex-col md:flex-row '>
+                <ul className='flex mt-20 md:mt-0 p-6 md:p-0 justify-end md:gap-10 w-full flex-col md:flex-row overflow-hidden '>
                     {props.path.map((NavPath, index)=> NavPath.pathname.toLowerCase() !== 'my resume' ?
                         <button key={index} onClick={()=>{
                             handleScrollToId(NavPath.href)
@@ -52,13 +52,13 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                 </ul>
                 <div className=' flex flex-col items-center md:hidden'>
 
-                    <div>
+                    <div className='text-sm text-gray-500'>
     Visit My Accounts
                     </div>
                     <div className='flex gap-5 p-5'>
                         {
                             MySocmed.map((coms, index)=> 
-                                <a href={coms.link} target='_blank' key={index} className='text-[#393E46]  text-[30px] hover:scale-105  hover:drop-shadow-xl ' rel="noreferrer">
+                                <a href={coms.link} target='_blank' key={index} className='text-[#393E46]  text-[100%] hover:scale-105  hover:drop-shadow-xl ' rel="noreferrer">
                                     {coms.icon}
                                 </a>)
                         }
