@@ -27,14 +27,14 @@ export const SkillsAndLanguages = () => {
                         {
                          
 
-                            return <div key={index}  className={twMerge('hover:scale-105 shadow-md hover:shadow-purple-900 duration-100 bg-white  rounded-lg ' )}>
+                            return <a href={language.link} target='_blank' key={index}  className={twMerge('hover:scale-105 shadow-md hover:shadow-purple-900 duration-100 bg-white  rounded-lg ' )} rel="noreferrer">
                                 <div className={twMerge('p-5 flex  items-center flex-col xl:flex-row overflow-hidden  w-full transition-all ease-in-out',currentView ? 'opacity-100 ' : 'opacity-0' )} style={{transitionDuration : `${(index*200) + 1000}ms` }}>
                                     <div style={{color:language.color}} className='text-[50px] md:text-[70px] mx-2 '>
                                         {language.icon}
                                     </div>
                                     <div className='capitalize text-sm mt-2 font-medium  md:block '>{language.name}</div>
                                 </div>
-                            </div>
+                            </a>
                         }
                         )}
                     </div>  

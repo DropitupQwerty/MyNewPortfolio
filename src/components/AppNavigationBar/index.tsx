@@ -28,7 +28,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                 </button>
             </div>
             <div className={` fixed bg-white w-full h-full z-[9999] md:hidden opacity-0 ${open?' opacity-60': 'hidden'}`} onClick={()=> setOpen(false)}></div>
-            <div className={`font-Montserrat border w-[70vw]  h-full md:h-fit md:w-full fixed z-[9999]  bg-[#f5f5f5]/70 filter backdrop-blur-md   md:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 md:opacity-100'} md:translate-x-0`}>  
+            <div className={`font-Montserrat border w-[70vw] overflow-hidden  h-full md:h-fit md:w-full fixed z-[9999]  bg-[#f5f5f5]/70 filter backdrop-blur-md   md:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 md:opacity-100'} md:translate-x-0`}>  
                 <div className='h-[50px] mx-5 mt-2 hidden md:block'>
                     <a href='/'>
                         <img src={logo} className='h-full '/>
