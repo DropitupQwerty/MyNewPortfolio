@@ -1,6 +1,7 @@
 import React from 'react'
 import myImage from 'assets/myImage2.webp'
 import { useOnScreen } from 'utilities/UseOnScreen'
+import { twMerge } from 'tailwind-merge'
 
 
 export const Banner = () => {
@@ -17,7 +18,7 @@ export const Banner = () => {
             >          
                 <div className='transition-all duration-1000 flex  sm:absolute mt-[20vh] sm:mt-0 w-screen h-full'>
                     <div className=' rounded-full sm:rounded-none overflow-hidden sm:overflow-visible  h-[30vh] w-[30vh] sm:w-full  mx-auto sm:mx-0 transition-all duration-1000 relative sm:left-0 lg:left-[40%] sm:bottom-[50%] md:bottom-[40%] lg:bottom-[30%]'>
-                        <img src={myImage} className={' sm:w-[70%%] object-contain sm:h-[220vh]'}/>
+                        <img src={myImage} className={twMerge(' sm:w-[70%%] object-contain sm:h-[220vh] transition-all duration-[1700ms]' , currentView ? 'opacity-100' : 'opacity-0')}/>
                     </div>
                 </div>
 
