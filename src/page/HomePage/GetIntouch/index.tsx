@@ -47,7 +47,7 @@ export const GetInTouch = () => {
                             <input id="subject" name='subject' className={twMerge('w-full p-4 border  rounded-lg focus:shadow-purple-900 focus:shadow outline-none','duration-[1600ms] transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Enter Subject'/>
                             <textarea name='message' rows={5} className={twMerge('resize-none border rounded-lg p-4 focus:shadow-purple-900 focus:shadow outline-none','duration-[1900ms] transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Message... '/>
                             <div className={twMerge('w-full flex justify-center','duration-1000 transition-all ', currrentView ? 'opacity-100' : 'opacity-0')}>
-                                <button type="submit" className='font-bold  rounded-lg  py-2 w-full bg-gradient-to-t from-purple-900 to-blue-900 text-white '>Submit</button>
+                                <button type="submit" className=' rounded-lg   p-3 w-full bg-gradient-to-t from-purple-900 to-blue-900 text-white '>Submit</button>
                             </div>
                         </div> 
                     </form>
