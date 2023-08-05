@@ -23,7 +23,6 @@ export const GetInTouch = () => {
         e.preventDefault()
         setIsSending('Send')            
         
-
         emailJs.sendForm(Service_ID , emailTemplate , formRef.current as HTMLFormElement , publicKey)
             .then((result)=> {
                 console.log(result.text)
@@ -31,6 +30,7 @@ export const GetInTouch = () => {
             }
             ).catch((error)=>{
                 console.log(error)
+                setIsSending('')
                 setIsError(error)
             }
             )
