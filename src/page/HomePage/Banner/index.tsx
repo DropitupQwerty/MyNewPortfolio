@@ -21,7 +21,7 @@ export const Banner = () => {
                     </div>
                 </div>
 
-                <div className={`z-[999] w-screen my-5 lg:w-[60vw] px-[20px] md:px-[70px] bg-white/70 md:mx-10 p-10 rounded-lg lg:bg-transparent transition-opacity duration-500 ${currentView ? 'opacity-100' : 'opacity-0'} `}>
+                <div className={`z-[999] w-screen my-5 lg:w-[60vw] px-[20px] md:px-[70px] bg-white/70 md:mx-10 p-10 rounded-lg lg:bg-transparent transition-opacity duration-1000 ${currentView ? 'opacity-100' : 'opacity-0'} `}>
                     <div className='hidden md:block'> 
                         <h1 className='text-2xl md:text-3xl font-medium'> Hello I&apos;m</h1>
                     </div>

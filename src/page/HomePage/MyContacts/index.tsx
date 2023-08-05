@@ -11,13 +11,20 @@ import { useOnScreen } from 'utilities/UseOnScreen'
 export const MyContacts = () => {
     const ref = React.useRef<HTMLDivElement>(null)
     const currentView = useOnScreen(ref)
+    const quote : string = ' Mistakes are the seeds from which trees of knowledge grow'
+
+    
+
 
 
     return (
       
         <div ref={ref} className=' bg-white flex flex-col items-center justify-evenly ' >   
             <div className='py-[40px] px-[20px] font-Montserrat text-center  text-[20px] text-[#393E46] flex justify-center'>
-                <div className='flex '><BiSolidQuoteAltLeft/> Mistakes are the seeds from which trees of knowledge grow<BiSolidQuoteAltRight/></div>
+            
+               | <BiSolidQuoteAltLeft/>
+                {quote}
+                <BiSolidQuoteAltRight/> |
             </div>       
             <div className='flex  items-end justify-start p-5 gap-10  h-full'>
                 <div>
