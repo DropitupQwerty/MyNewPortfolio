@@ -28,7 +28,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                 </button>
             </div>
             <div className={` fixed bg-white w-full h-full z-[9999] md:hidden opacity-0 ${open?' opacity-60': 'hidden'}`} onClick={()=> setOpen(false)}></div>
-            <div className={`font-Montserrat border w-[70vw] overflow-hidden  h-full md:h-fit md:w-full fixed z-[9999]  bg-[#f5f5f5]/70 filter backdrop-blur-md   md:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 md:opacity-100'} md:translate-x-0`}>  
+            <div className={`font-Montserrat border w-[70vw] overflow-hidden scro  h-full md:h-fit md:w-full fixed z-[9999]  bg-[#f5f5f5]/70 filter backdrop-blur-md   md:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 md:opacity-100'} md:translate-x-0`}>  
                 <div className='h-[50px] mx-5 mt-2 hidden md:block'>
                     <a href='/'>
                         <img src={logo} className='h-full '/>
@@ -39,12 +39,12 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                         <button key={index} onClick={()=>{
                             handleScrollToId(NavPath.href)
                             setOpen(false)}} >
-                            <div className='p-3 md:p-5 border-b-2 flex flex-col lowercase md:border-none font-medium hover:drop-shadow-lg  text-[#39383D] text-start md:text-center text=[#393E46] text-[16px]'>
+                            <div className='p-3 md:p-5 border-b-2 flex flex-col capitalize md:border-none font-medium hover:drop-shadow-lg  text-[#39383D] text-start md:text-center text=[#393E46] text-[16px]'>
                                 {NavPath.pathname} 
                             </div>
                         </button> :
                         <a key={index}  href={NavPath.href} target='_blank' rel="noreferrer">
-                            <div className='p-3 md:p-5 border-b-2 flex flex-col lowercase md:border-none font-medium hover:drop-shadow-lg  text-[#39383D] text-start md:text-center text=[#393E46] text-[16px]'>
+                            <div className='p-3 md:p-5 border-b-2 flex flex-col Capitalize md:border-none font-medium hover:drop-shadow-lg  text-[#39383D] text-start md:text-center text=[#393E46] text-[16px]'>
                                 {NavPath.pathname} 
                             </div>
                         </a>
