@@ -9,20 +9,12 @@ export const SkillsAndLanguages = () => {
    
     const ref = React.useRef<HTMLDivElement>(null)
     const currentView = useOnScreen(ref)
-
-    console.log('skills' ,currentView)
-    
-    
-
- 
-
-
     return (
         <div   className='relative flex flex-col justify-center   overflow-hidden  items-center bg-[#f5f5f5]'  >
             <div className='px-[30px] md:px-[100px]  py-[50px] w-full font-Montserrat  min-h-screen '  id="skills"  >
                 <div className='flex justify-between gap-10 items-center my-14'  >
                     <span className={twMerge('w-[80%] h-[1px] bg-[#393E46] transition-all duration-1000 hidden md:block' , currentView  ? '' : 'w-0')}></span>
-                    <div  className={twMerge(' md:text-start transition-all duration-[1400ms] w-[40vw] text-justify' , currentView ? 'translate-x-0 opacity-100'  : 'translate-x-full opacity-0'  )} >
+                    <div  className={twMerge(' md:text-start transition-all duration-[1400ms] md:w-[40vw] text-justify' , currentView ? 'translate-x-0 opacity-100'  : 'translate-x-full opacity-0'  )} >
                         <h1 className='text-[20px] text-transparent bg-gradient-to-t from-purple-900 to-blue-900 font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
                         Programming Languages , Frameworks and Devtools.
                         </h1>

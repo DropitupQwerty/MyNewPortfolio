@@ -7,6 +7,7 @@ import { Banner } from 'page/HomePage/Banner'
 import { GetInTouch } from 'page/HomePage/GetIntouch'
 import { paths } from 'utilities/Paths'
 import { AppLayout } from 'components/AppLayout'
+// import { SplashScreen } from 'page/HomePage/SplashScreen'
 
 
 
@@ -19,6 +20,7 @@ export const HomePage = () => {
     return (
         <AppLayout >
             <AppNavigationBar path={paths}/>
+            {/* <SplashScreen/> */}
             <Banner/>
             <SkillsAndLanguages/>
             <Projects/> 

@@ -14,20 +14,21 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
 
     return (
         <div className=''>
-            {/* <div className='h-[60px] absolute m-5 md:hidden '>
-                <a href='/'>
-                    <img src={logo} className='h-full '/>
+            <div className='absolute m-5 md:hidden '>
+                <a href='/' className='flex items-center font-bold gap-2'>
+                    <img src={logo} className='h-[60px] '/>
+                    Jacob Allen Valderama Portfolio
                 </a>
-            </div>  */}
-            <div className='fixed z-[99999] flex top-0 justify-end w-full'> 
-                <button className={'flex flex-col gap-2  p-2 m-5  rounded  md:hidden '} onClick={()=> setOpen(!open)}>
+            </div> 
+            <div className='fixed z-[99999] flex top-0 justify-end w-full '> 
+                <button className={'flex flex-col gap-2  p-2 m-5  rounded  md:hidden'} onClick={()=> setOpen(!open)}>
                     <span className={`h-[4px] rounded-full w-[30px] bg-[#39383D] transition-all duration-400 ease-in transform ${open ?'rotate-[225deg] translate-y-3 ' : 'rotate-0 translate-y-0'}`}></span>
                     <span className={`h-[4px] rounded-full w-[30px] bg-[#39383D] transition-all duration-400 ease-in transform ${open ?'opacity-0' : 'opacity-100'}`}></span>
                     <span className={`h-[4px] rounded-full w-[30px] bg-[#39383D] transition-all duration-400 ease-in transform ${open ?'-rotate-[225deg] -translate-y-3' : 'rotate-0  translate-y-0'}`}></span>
                 </button>
             </div>
             <div className={` fixed bg-white w-full h-full z-[9999] md:hidden opacity-0 ${open?' opacity-60': 'hidden'}`} onClick={()=> setOpen(false)}></div>
-            <div className={`font-Montserrat border w-[70vw]  h-full md:h-fit md:w-full fixed z-[9999]  bg-[#f5f5f5]/70 filter backdrop-blur-md   md:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 ' : '-translate-x-full '} md:translate-x-0`}>  
+            <div className={`font-Montserrat border w-[70vw]  h-full md:h-fit md:w-full fixed z-[9999]  bg-[#f5f5f5]/70 filter backdrop-blur-md   md:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 md:opacity-100'} md:translate-x-0`}>  
                 <div className='h-[50px] mx-5 mt-2 hidden md:block'>
                     <a href='/'>
                         <img src={logo} className='h-full '/>

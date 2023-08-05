@@ -1,9 +1,6 @@
 import React from 'react'
 import  DynamicBg  from 'assets/subtle-prism.svg'
 
-// import { useOnScreen } from 'utilities/UseOnScreen'
-// import { AppSideButtons } from 'components/AppSideButtons'
-
 type AppLayoutProps = { 
     children : React.ReactNode
 }
