@@ -21,7 +21,9 @@ export const GetInTouch = () => {
     
     const sendEmail  = (e : React.FormEvent) => { 
         e.preventDefault()
-        console.log(formRef.current)
+        setIsSending('Send')            
+        
+
         emailJs.sendForm(Service_ID , emailTemplate , formRef.current as HTMLFormElement , publicKey)
             .then((result)=> {
                 console.log(result.text)
@@ -53,7 +55,7 @@ export const GetInTouch = () => {
                             {isSending && <span className='text-green-600 flex gap-2 items-center'>Message Send <BiCheckCircle/></span>}
                             {isError && <span className='text-red-600 flex gap-2 items-center'>Error Sending Message <BsExclamationCircle/></span>}
                             <div className={twMerge('w-full flex justify-center','duration-1000 transition-all ', currrentView ? 'opacity-100' : 'opacity-0')}>
-                                <button type="submit" disabled={!!isError || !!isSending} className={twMerge(' rounded-lg   p-3 w-full bg-gradient-to-t from-purple-900 to-blue-900 text-white ',isError || isSending && 'cursor-not-allowed opacity-25')}>{isSending?'Sending' : 'Submit'}</button>
+                                <button type="submit" disabled={ !!isSending} className={twMerge(' rounded-lg   p-3 w-full bg-gradient-to-t from-purple-900 to-blue-900 text-white ', isSending && 'cursor-not-allowed opacity-25')}>{isSending?'Sending' : 'Submit'}</button>
                             </div>
                         </div> 
                     </form>
