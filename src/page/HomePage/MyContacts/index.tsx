@@ -22,9 +22,9 @@ export const MyContacts = () => {
         <div ref={ref} className=' bg-white flex flex-col items-center justify-evenly ' >   
             <div className='py-[40px] px-[20px] font-Montserrat text-center  text-[20px] text-[#393E46] flex justify-center'>
             
-               | <BiSolidQuoteAltLeft/>
+                <BiSolidQuoteAltLeft/>
                 {quote}
-                <BiSolidQuoteAltRight/> |
+                <BiSolidQuoteAltRight/>
             </div>       
             <div className='flex  items-end justify-start p-5 gap-10  h-full'>
                 <div>
