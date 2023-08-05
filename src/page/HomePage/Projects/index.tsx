@@ -48,15 +48,15 @@ export const Projects = () => {
                         <p className='text-[16px] md:text-[20px]'>Here you will find some of the personal and clients projects and project that I collaborated with</p>
                     </div>
                 </div>
-                <div ref={ref} className='grid grid-cols-1 md:grid-cols-2 gap-4 justify-center z-[10] rounded-lg md:p-10'>
+                <div ref={ref} className='grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center z-[10] rounded-lg lg:p-10'>
 
                     {projects.map((project, index)=> 
                         <div key={index} className={`duration-1000 transition-all ${currentView ? 'translate-x-0 opacity-100' : index + 1 % 2 == 0 ? '-translate-x-10 opacity-0' :'translate-x-10 opacity-0'}`} style={{transitionDuration : `${(index*1)}s` }}>
                             <div className='relative h-full shadow-lg overflow-hidden md:bg-white rounded-lg'>
                                 <div className='absolute h-full w-full border-2 border-transparent hover:border-2 rounded-lg hover:border-white  text-white hover:bg-gradient-to-t  from-purple-900/80 to-blue-900/80 opacity-0 hover:opacity-100 duration-700 flex items-center justify-center'>
                                     <div className='p-5'>
-                                        <div className=' overflow-ellipsis text-[12px] md:text-lg'>
-                                            <div className='font-bold md:text-xl my-2'>{project.name}</div>
+                                        <div className=' overflow-ellipsis text-[12px] md:text-sm lg:text-xl'>
+                                            <div className='font-bold md:text-sm lg:text-xl my-2'>{project.name}</div>
                                             {project.description}
                                         </div>
                                         <a href={project.links} target='_blank' className='absolute text-sm bottom-4 right-4 text-white  border border-white-900 rounded-lg px-3 py-2 bg-gradient-to-t from-purple-900 to-blue-900' rel="noreferrer">

@@ -41,6 +41,7 @@ export const MyContacts = () => {
                 </div>
                 
             </div>
+            <div className='text-sm p-2 text-gray-400'>portfolio created by jacob allen valderama</div>
         </div> 
     )
 }
