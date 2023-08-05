@@ -1,5 +1,5 @@
 import React from 'react'
-import  DynamicBg  from 'assets/subtle-prism.svg'
+// import  DynamicBg  from 'assets/subtle-prism.svg'
 
 type AppLayoutProps = { 
     children : React.ReactNode
