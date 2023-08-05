@@ -14,14 +14,14 @@ export const SkillsAndLanguages = () => {
             <div className='px-[30px] md:px-[100px]  py-[50px] w-full font-Montserrat  min-h-screen '  id="skills"  >
                 <div className='flex justify-between gap-10 items-center my-14'  >
                     <span className={twMerge('w-[80%] h-[1px] bg-[#393E46] transition-all duration-1000 hidden md:block' , currentView  ? '' : 'w-0')}></span>
-                    <div  className={twMerge(' md:text-start transition-all duration-[1400ms] md:w-[40vw] text-justify' , currentView ? 'translate-x-0 opacity-100'  : 'translate-x-full opacity-0'  )} >
-                        <h1 className='text-[20px] text-transparent bg-gradient-to-t from-purple-900 to-blue-900 font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
+                    <div  className={twMerge(' leading-1 md:text-start transition-all duration-[1400ms] md:w-[40vw] text-justify' , currentView ? 'translate-x-0 opacity-100'  : 'translate-x-full opacity-0'  )} >
+                        <p className={'mt-2 text-[#393E46] '} >I build websites with these</p>
+                        <h1 className='text-[20px]  text-transparent bg-gradient-to-t from-purple-900 to-blue-900 font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
                         Programming Languages , Frameworks and Devtools.
                         </h1>
-                        <p className={'mt-2 text-[#393E46] '} >I build websites with these programming languages , frameworks , dev tools and designing tools.</p>
                     </div>
                 </div>
-                <div  className='flex xl:px-[100px] items-center' >
+                <div  className='flex  items-center' >
                     <div   ref={ref} className='w-full grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-3 text-[#393E46]  justify-center '>
                         {ProgrammingLanguages.map((language , index)=>
                         {
