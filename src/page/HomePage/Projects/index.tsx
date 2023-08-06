@@ -63,7 +63,7 @@ const projects = [
         img: healthcare,
         name: 'Santos Maternity Clinic Management System',
         links: 'https://healthcare-management-system.vercel.app/',
-        description:'This is the mobile application and website I use at work. this assists the user in making an appointment with the clinic by handling doctor appointments and timetables.',
+        description:'This is the website with mobile application that we just finished lately . This is for managing the appointments and the schedules of doctors and helps the user to have an appoitnment with the clinic',
         programminglanguagesIcons: [
             {
                 icon: <BiLogoJavascript />,
