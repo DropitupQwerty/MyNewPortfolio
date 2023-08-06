@@ -14,7 +14,7 @@ const projects = [
         img: reskyutBg,
         name: 'RESKYUT : Made Pet Adoption Fun and Easy',
         links: 'https://reskyut-landing-page.vercel.app/',
-        description:'A Web and Mobile project .A tinder like project that help to find the best pet you want and it helps animal shelters for being overpopulated. it also helps animal to find their best parents',
+        description:'A web and mobile project that makes it easier to select the ideal pet while also assisting overcrowded animal shelters. It aids animals in locating the ideal parents.',
         programminglanguagesIcons: [
             {
                 icon: <BiLogoJavascript />,
@@ -35,7 +35,7 @@ const projects = [
         img: yokai,
         name: 'Yokai Express',
         links: 'https://www.yokaiexpress.com/',
-        description:'A web and Mobile project , This project was the one I work with in my Intership Program . I work in the admin side as a fullstack developer . This is a website for ordering a ramen and through a vending machine and can show the location of the vending machine that near to you',
+        description:'A web-based and mobile project, this was the project I worked on throughout my internship. As a full-stack developer, I work on the admin side. This website allows you to order ramen through an Android device and can display the location of the closest vending machine to you.',
         programminglanguagesIcons: [
             {
                 icon: <BiLogoTypescript />,
@@ -63,7 +63,7 @@ const projects = [
         img: healthcare,
         name: 'Santos Maternity Clinic Management System',
         links: 'https://healthcare-management-system.vercel.app/',
-        description:'This is the website with mobile application that I work with . this is for managing the appointments and the schedules of doctors and helps the user to have an appoitnment with the clinic',
+        description:'This is the mobile application and website I use at work. this assists the user in making an appointment with the clinic by handling doctor appointments and timetables.',
         programminglanguagesIcons: [
             {
                 icon: <BiLogoJavascript />,
