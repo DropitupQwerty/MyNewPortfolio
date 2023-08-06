@@ -107,7 +107,7 @@ export const Projects = () => {
                         <h1 className='text-[20px] md:text-[40px] font-extrabold drop-shadow-lg tracking-[6px]'>
                 Thesis project and collaborative projects.
                         </h1>
-                        <p className='text-[16px] md:text-[20px]'>Here you will find some of the personal and clients projects and project that I collaborated with, Some of these projects are not impressive as they are hoping to learn and gain experience for the my future projects</p>
+                        <p className='text-[16px] md:text-[20px]'>Here you will find our capstone project and collaborative clients project as one of their developer.  This will show my programming languages  that I use in building these projects</p>
                     </div>
                 </div>
                 <div ref={ref} className='grid grid-cols-1  gap-4 justify-center z-[10] rounded-lg lg:p-10'>
@@ -128,12 +128,12 @@ export const Projects = () => {
                                     <div className=' bottom-5 gap-4'>
                                         <div className='flex gap-2 '>
                                             {project.programminglanguagesIcons.map((programminglanguage, index)=>
-                                                <div key={index} className='text-lg md:text-3xl m-4'>{programminglanguage.icon}</div>
+                                                <div key={index} className='text-lg md:text-3xl m-4 border rounded-full p-2'>{programminglanguage.icon}</div>
                                             )
                                             }
                                         </div>
-                                        <a href={project.links} target='_blank' className='border text-sm md:text-lg p-2 w-fit flex items-center gap-2  rounded-md duration-150 hover:bg-black hover:text-white' rel="noreferrer">
-                                        Live Demo <BiLinkExternal className='text-sm md:text-lg'/>
+                                        <a href={project.links} target='_blank' className='border text-sm  p-2 w-fit flex items-center gap-2  rounded-md duration-150 hover:bg-black hover:text-white' rel="noreferrer">
+                                        Live Demo <BiLinkExternal className='text-sm md:text-xl'/>
                                         </a>
                                     </div>
                                 </div>

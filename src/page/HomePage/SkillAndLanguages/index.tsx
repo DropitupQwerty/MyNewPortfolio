@@ -36,7 +36,15 @@ export const SkillsAndLanguages = () => {
                         }
                         )}
                     </div>  
-                    <div className='backdrop-blur-md p-4 shadow-lg '>As a aspiring front end developer I use to work with some of these tools and programming languages in creating website&apos;s <span className='text-blue-700'>React,HTML, CSS</span></div>
+                    <div className='backdrop-blur-md p-4 shadow-lg rounded-lg'>
+                        <p>
+                        As an aspiring front-end developer I use to work with some of these tools and programming languages in creating website&apos;s such as <span className='text-blue-700'>React,HTML, CSS, NodeJs, TailwindCss, JavaScript, TypeScript, SpringBoot</span>
+                        </p>
+                        <p className='mt-2'>
+                        Other tools here was the one I use for designing 
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
