@@ -14,7 +14,7 @@ const projects = [
         img: reskyutBg,
         name: 'RESKYUT : Made Pet Adoption Fun and Easy',
         links: 'https://reskyut-landing-page.vercel.app/',
-        description:'A tinder like project that help to find the best pet you want and it helps animal shelters for being overpopulated. it also helps animal to find their best parents',
+        description:'A Web and Mobile project .A tinder like project that help to find the best pet you want and it helps animal shelters for being overpopulated. it also helps animal to find their best parents',
         programminglanguagesIcons: [
             {
                 icon: <BiLogoJavascript />,
@@ -35,7 +35,7 @@ const projects = [
         img: yokai,
         name: 'Yokai Express',
         links: 'https://www.yokaiexpress.com/',
-        description:'This is the project I work with in my Intership Program . I work in the admin side as a fullstack developer . This is a website for ordering a ramen and through a vending machine and can show the location of the vending machine that near to you',
+        description:'A web and Mobile project , This project was the one I work with in my Intership Program . I work in the admin side as a fullstack developer . This is a website for ordering a ramen and through a vending machine and can show the location of the vending machine that near to you',
         programminglanguagesIcons: [
             {
                 icon: <BiLogoTypescript />,
@@ -63,7 +63,7 @@ const projects = [
         img: healthcare,
         name: 'Santos Maternity Clinic Management System',
         links: 'https://healthcare-management-system.vercel.app/',
-        description:'A website for managing the Clinic and for the user appointments',
+        description:'This is the website with mobile application that I work with . this is for managing the appointments and the schedules of doctors and helps the user to have an appoitnment with the clinic',
         programminglanguagesIcons: [
             {
                 icon: <BiLogoJavascript />,
@@ -116,12 +116,12 @@ export const Projects = () => {
                         <div key={index} className={`duration-1000 transition-all ${currentView ? 'translate-x-0 opacity-100' : index  %  2 == 0 ? '-translate-x-10 opacity-0' :'translate-x-10 opacity-0'}`} style={{transitionDuration : `${(index+1*1)}s` }}>
                             <div className='relative bg-white overflow-hidden  h-fit lg:h-[50vh] flex flex-col md:flex-row  shadow-lg  md:bg-white rounded-lg'>
                             
-                                <img  src={project.img} className=' object-cover w-full h-[50%] md:h-auto md:w-[50%]'/>
+                                <img  src={project.img} className='rounded-lg object-cover w-full h-[50%] md:h-auto md:w-[50%]'/>
                                 
                                 <div className='p-4 lg:p-10 md:w-[50%] relative flex flex-col justify-between'>
                                     <div>
                                         <div className='font-bold'>{project.name}</div>
-                                        <div className='overflow-hidden line-clamp-3 text-ellipsis text-sm'>
+                                        <div className='overflow-hidden line-clamp-3 text-ellipsis text-sm md:text-lg'>
                                             {project.description}
                                         </div>
                                     </div>

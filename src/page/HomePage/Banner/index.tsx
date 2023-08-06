@@ -48,8 +48,8 @@ abilities, a keen eye for detail, and a passion for producing high-caliber code.
 
 
              
-
             </div>
+
         </div>
     )
 }
