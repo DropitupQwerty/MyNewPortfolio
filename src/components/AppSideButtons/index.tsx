@@ -13,7 +13,7 @@ export const AppSideButtons = () => {
     const percent = (pagePercent / pageHeight ) * 100
 
     return (
-        <div className='z-[99999] h-full relative  border border-red-500' > 
+        <div className='z-[99999] h-full relative' > 
             <div className='fixed bottom-0 w-[120vw]'>
 
                 <div  className={'h-[4px]  bg-purple-900   duration-400 transition-all'}  style={{width:`${(100 - percent) }%`}}  >
