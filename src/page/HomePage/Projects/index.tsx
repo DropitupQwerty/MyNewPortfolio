@@ -121,7 +121,7 @@ export const Projects = () => {
                                 <div className='p-4 lg:p-10 md:w-[50%] relative flex flex-col justify-between'>
                                     <div>
                                         <div className='font-bold'>{project.name}</div>
-                                        <div className='overflow-hidden line-clamp-3 text-ellipsis text-sm md:text-lg'>
+                                        <div className='overflow-hidden line-clamp-5 text-ellipsis text-sm md:text-lg'>
                                             {project.description}
                                         </div>
                                     </div>
