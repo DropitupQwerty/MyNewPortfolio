@@ -16,7 +16,7 @@ export const SkillsAndLanguages = () => {
                     <span className={twMerge('w-[80%] h-[1px] bg-[#393E46] transition-all duration-[1400ms] hidden md:block' , currentView  ? '' : 'w-0')}></span>
                     <div  className={twMerge(' leading-1 md:text-start transition-all duration-[1400ms] md:w-[40vw] text-justify' , currentView ? 'translate-x-0 opacity-100'  : 'translate-x-full opacity-0'  )} >
                         <p className={'mt-2 text-[#393E46] '} >I build with these</p>
-                        <h1 className='text-[20px]  text-transparent bg-gradient-to-t from-purple-900 to-blue-900 font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
+                        <h1 className='text-[20px]   font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
                         Programming Languages , Frameworks and Devtools.
                         </h1>
                     </div>

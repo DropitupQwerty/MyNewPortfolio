@@ -49,8 +49,6 @@ export const GetInTouch = () => {
                     <form ref={formRef} onSubmit={(e)=>sendEmail(e)}>
                         <div ref={ref} className='flex flex-col gap-5 mt-10'>
                             <input id="email" required name='email' className={twMerge('  w-full p-4 border  rounded-lg focus:shadow-purple-900 focus:shadow outline-none','duration-1000 transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Enter your Email Address'/>
-                            <input id="name" required name='name' className={twMerge('w-full p-4 border  rounded-lg focus:shadow-purple-900 focus:shadow outline-none','duration-[1300ms] transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Enter your Name'/>
-                            <input  id="subject" required name='subject' className={twMerge('w-full p-4 border  rounded-lg focus:shadow-purple-900 focus:shadow outline-none','duration-[1600ms] transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Enter Subject'/>
                             <textarea name='message' required rows={5} className={twMerge('resize-none border rounded-lg p-4 focus:shadow-purple-900 focus:shadow outline-none','duration-[1900ms] transition-all ', currrentView ? 'opacity-100' : 'opacity-0')} placeholder='Message... '/>
                             {isSending && <span className='text-green-600 flex gap-2 items-center'>Message Send <BiCheckCircle/></span>}
                             {isError && <span className='text-red-600 flex gap-2 items-center'>Error Sending Message <BsExclamationCircle/></span>}
