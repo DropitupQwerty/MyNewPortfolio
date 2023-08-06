@@ -38,9 +38,9 @@ export const GetInTouch = () => {
 
 
     return (
-        <div  className=' flex items-center bg-white' id="contact">
+        <div  className=' flex items-center ' id="contact">
             <div className='w-full  my-10  flex justify-center ' >
-                <div className='flex flex-col bg-white p-10 lowercase w-full md:w-[60%] '>
+                <div className='flex flex-col bg-white p-10 rounded-lg lowercase w-full md:w-[60%] '>
                     <div  className={twMerge('duration-1000 transition-all ', currrentView ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0')}>
                         <div  className='text-[40px] lg:text-[70px] font-extrabold bg-clip-text text-transparent bg-gradient-to-t from-purple-900 to-blue-900'>Email me here.</div>
                     </div>

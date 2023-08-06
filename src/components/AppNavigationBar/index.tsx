@@ -28,23 +28,23 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                 </button>
             </div>
             <div className={` fixed bg-white w-full h-full z-[9999] md:hidden opacity-0 ${open?' opacity-60': 'hidden'}`} onClick={()=> setOpen(false)}></div>
-            <div className={`font-Montserrat border w-[70vw] overflow-hidden scro  h-full md:h-fit md:w-full fixed z-[9999]  bg-[#f5f5f5]/70 filter backdrop-blur-md   md:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 md:opacity-100'} md:translate-x-0`}>  
+            <div className={`font-Montserrat  w-[70vw] overflow-hidden scro  h-full md:h-fit md:w-full fixed z-[9999]  md:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 md:opacity-100'} md:translate-x-0`}>  
                 <div className='h-[50px] mx-5 mt-2 hidden md:block'>
                     <a href='/'>
                         <img src={logo} className='h-full '/>
                     </a>
                 </div>          
-                <ul className='flex mt-20 md:mt-0 p-6 md:p-0 justify-end md:gap-10 w-full flex-col md:flex-row overflow-hidden '>
+                <ul className='flex mt-20 md:mt-0 p-6 md:p-0 justify-center md:gap-10 w-full flex-col md:flex-row overflow-hidden '>
                     {props.path.map((NavPath, index)=> NavPath.pathname.toLowerCase() !== 'my resume' ?
                         <button key={index} onClick={()=>{
                             handleScrollToId(NavPath.href)
                             setOpen(false)}} >
-                            <div className='p-3 md:p-5 border-b-2 flex flex-col capitalize md:border-none font-medium hover:drop-shadow-lg  text-[#39383D] text-start md:text-center text=[#393E46] text-[16px]'>
+                            <div className='p-3 md:p-5 border-b-2  flex flex-col capitalize md:border-none font-medium hover:drop-shadow-lg  text-start md:text-center text=[#393E46] text-[16px]'>
                                 {NavPath.pathname} 
                             </div>
                         </button> :
                         <a key={index}  href={NavPath.href} target='_blank' rel="noreferrer">
-                            <div className='p-3 md:p-5 border-b-2 flex flex-col Capitalize md:border-none font-medium hover:drop-shadow-lg  text-[#39383D] text-start md:text-center text=[#393E46] text-[16px]'>
+                            <div className='p-3 md:p-5 border-b-2 flex flex-col Capitalize md:border-none font-medium hover:drop-shadow-lg  text-start md:text-center text=[#393E46] text-[16px]'>
                                 {NavPath.pathname} 
                             </div>
                         </a>

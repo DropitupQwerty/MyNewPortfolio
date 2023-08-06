@@ -1,5 +1,5 @@
 import React from 'react'
-// import  DynamicBg  from 'assets/subtle-prism.svg'
+import  DynamicBg  from 'assets/subtle-prism.svg'
 
 type AppLayoutProps = { 
     children : React.ReactNode
@@ -13,11 +13,11 @@ export const AppLayout = (props : AppLayoutProps) => {
     return (
         <div >
             <div
-                className='relative select-none overflow-hidden divide-y-[2px]' 
+                className='relative select-none overflow-hidden ' 
                 style={{
-                    // backgroundImage: `url(${DynamicBg})` ,
-                    // backgroundSize:'cover',
-                    // backgroundRepeat:'no-repeat',
+                    backgroundImage: `url(${DynamicBg})` ,
+                    backgroundSize:'cover',
+                    backgroundRepeat:'no-repeat',
                 }}>
                 {/* <AppSideButtons /> */}
                 {props.children}

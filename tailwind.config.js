@@ -16,7 +16,8 @@ export default {
             fontFamily: {
                 'Montserrat': ['Montserrat', 'sans-serif'],
                 'Sharetechmo' : ['Share Tech Mono', 'monospace'],
-                'Ubuntu' : ['Ubuntu' , 'monospace']
+                'Ubuntu' : ['Ubuntu' , 'monospace'],
+                'FatFace' : ['Abril Fatface', 'cursive']
             },
             backgroundImage : {
                 'myPicture' : 'url(\'/assets/myImage.png\')'

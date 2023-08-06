@@ -19,7 +19,7 @@ export const MyContacts = () => {
 
     return (
       
-        <div ref={ref} className=' bg-white flex flex-col items-center justify-evenly ' >   
+        <div ref={ref} className='flex flex-col items-center justify-evenly ' >   
             <div className='py-[40px] px-[20px] font-Montserrat text-center  text-[20px] text-[#393E46] flex justify-center'>
             
                 <BiSolidQuoteAltLeft/>
