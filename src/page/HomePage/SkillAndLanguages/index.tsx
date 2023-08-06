@@ -15,14 +15,14 @@ export const SkillsAndLanguages = () => {
                 <div className='flex flex-row-reverse justify-between gap-10 items-center my-14'  >
                     <span className={twMerge('w-[80%] h-[1px] bg-[#393E46] transition-all duration-[1400ms] hidden md:block' , currentView  ? '' : 'w-0')}></span>
                     <div  className={twMerge(' leading-1 md:text-start transition-all duration-[1400ms] md:w-[40vw] text-justify' , currentView ? 'translate-x-0 opacity-100'  : 'translate-x-full opacity-0'  )} >
-                        <p className={'mt-2 text-[#393E46] '} >I build websites with these</p>
+                        <p className={'mt-2 text-[#393E46] '} >I build with these</p>
                         <h1 className='text-[20px]  text-transparent bg-gradient-to-t from-purple-900 to-blue-900 font-extrabold lowercase   bg-clip-text drop-shadow-lg tracking-[6px]'>
                         Programming Languages , Frameworks and Devtools.
                         </h1>
                     </div>
                 </div>
-                <div  className='flex h-fit items-center' >
-                    <div ref={ref} className='w-1/2 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-3 text-[#393E46]  justify-center '>
+                <div  className='flex flex-col-reverse gap-10 lg:flex-row h-fit items-center justify-center' >
+                    <div ref={ref} className='w-full place-items-center  grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-3 text-[#393E46] '>
                         {ProgrammingLanguages.map((language , index)=>
                         {
                             return <a href={language.link} target='_blank' key={index}  className={twMerge('hover:scale-105 overflow-hidden w-fit relative shadow-md hover:shadow-purple-900 duration-100 bg-white  rounded-full ' )} rel="noreferrer">
@@ -36,7 +36,7 @@ export const SkillsAndLanguages = () => {
                         }
                         )}
                     </div>  
-                    <div className='backdrop-blur-md p-4 shadow-lg '>I use to work with these tools and languages most of them are i always use</div>
+                    <div className='backdrop-blur-md p-4 shadow-lg '>As a aspiring front end developer I use to work with some of these tools and programming languages in creating website&apos;s <span className='text-blue-700'>React,HTML, CSS</span></div>
                 </div>
             </div>
         </div>

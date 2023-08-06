@@ -21,20 +21,20 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                 </a>
             </div> 
             <div className='fixed z-[99999] flex top-0 justify-end w-full '> 
-                <button className={'flex flex-col gap-2  p-2 m-5  rounded  md:hidden'} onClick={()=> setOpen(!open)}>
+                <button className={'flex flex-col gap-2  p-2 m-5  rounded  lg:hidden'} onClick={()=> setOpen(!open)}>
                     <span className={`h-[4px] rounded-full w-[30px] bg-[#39383D] transition-all duration-400 ease-in transform ${open ?'rotate-[225deg] translate-y-3 ' : 'rotate-0 translate-y-0'}`}></span>
                     <span className={`h-[4px] rounded-full w-[30px] bg-[#39383D] transition-all duration-400 ease-in transform ${open ?'opacity-0' : 'opacity-100'}`}></span>
                     <span className={`h-[4px] rounded-full w-[30px] bg-[#39383D] transition-all duration-400 ease-in transform ${open ?'-rotate-[225deg] -translate-y-3' : 'rotate-0  translate-y-0'}`}></span>
                 </button>
             </div>
-            <div className={` fixed bg-white w-full h-full z-[9999] md:hidden opacity-0 ${open?' opacity-60': 'hidden'}`} onClick={()=> setOpen(false)}></div>
-            <div className={`font-Montserrat  w-[70vw] overflow-hidden scro  h-full md:h-fit md:w-full fixed z-[9999]  md:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 md:opacity-100'} md:translate-x-0`}>  
-                <div className='h-[50px] mx-5 mt-2 hidden md:block'>
+            <div className={` fixed bg-white w-full h-full z-[9999] lg:hidden opacity-0 ${open?' opacity-60': 'hidden'}`} onClick={()=> setOpen(false)}></div>
+            <div className={`font-Montserrat  bg-white/80 lg:bg-transparent w-[70vw] overflow-hidden   h-full lg:h-fit lg:w-full fixed z-[9999]  lg:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 lg:opacity-100'} lg:translate-x-0`}>  
+                <div className='h-[50px] mx-5 mt-2 hidden lg:block'>
                     <a href='/'>
                         <img src={logo} className='h-full '/>
                     </a>
                 </div>          
-                <ul className='flex mt-20 md:mt-0 p-6 md:p-0 justify-center md:gap-10 w-full flex-col md:flex-row overflow-hidden '>
+                <ul className='flex mt-20  md:mt-0 p-6 md:p-0 justify-center md:gap-10 w-full flex-col lg:flex-row overflow-hidden '>
                     {props.path.map((NavPath, index)=> NavPath.pathname.toLowerCase() !== 'my resume' ?
                         <button key={index} onClick={()=>{
                             handleScrollToId(NavPath.href)
