@@ -27,7 +27,7 @@ export const SkillsAndLanguages = () => {
                         {
                             return <a href={language.link} target='_blank' key={index}  className={twMerge('hover:scale-105 overflow-hidden w-fit relative shadow-md hover:shadow-purple-900 duration-100 bg-white  rounded-full ' )} rel="noreferrer">
                                 <div className={twMerge('p-5 flex  items-center flex-col xl:flex-row overflow-hidden   transition-all ease-in-out',currentView ? 'opacity-100 scale-100' : 'opacity-0 scale-0' )} style={{transitionDuration : `${(index*200) + 1000}ms` }}>
-                                    <div style={{color:language.color}} className='text-[50px] md:text-[30px]'>
+                                    <div style={{color:language.color}} className='text-[70px] md:text-[40px]'>
                                         {language.icon}
                                     </div>
                                     {/* <div className='lowercase text-sm mt-2 font-medium  md:block tracking-wide'>{language.name}</div> */}

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { pathType } from 'types/pathType'
 import logo from 'assets/myLogo.svg'
 import { handleScrollToId } from 'utilities'
-import { MySocmed } from 'utilities/Social'
+import { AppContactIcons } from 'components/AppContactIcons'
 
 type AppNavigationBarProps = { 
     path : pathType[]
@@ -28,7 +28,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                 </button>
             </div>
             <div className={` fixed bg-white w-full h-full z-[9999] lg:hidden opacity-0 ${open?' opacity-60': 'hidden'}`} onClick={()=> setOpen(false)}></div>
-            <div className={`font-Montserrat  bg-white/80 lg:bg-transparent w-[70vw] overflow-hidden   h-full lg:h-fit lg:w-full fixed z-[9999]  lg:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 lg:opacity-100'} lg:translate-x-0`}>  
+            <div className={`font-Montserrat  bg-white/80 lg:white/40 w-[70vw] overflow-hidden   h-full lg:h-fit lg:w-full fixed z-[9999]  lg:flex  top-0   flex justify-between items-center duration-700 transition-all ease-in-out flex-col md:flex-row ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 lg:opacity-100'} lg:translate-x-0`}>  
                 <div className='h-[50px] mx-5 mt-2 hidden lg:block'>
                     <a href='/'>
                         <img src={logo} className='h-full '/>
@@ -55,14 +55,7 @@ export const AppNavigationBar = (props : AppNavigationBarProps) => {
                     <div className='text-sm text-gray-500'>
     Visit My Accounts
                     </div>
-                    <div className='flex gap-5 p-5'>
-                        {
-                            MySocmed.map((coms, index)=> 
-                                <a href={coms.link} target='_blank' key={index} className='text-[#393E46]  text-[100%] hover:scale-105  hover:drop-shadow-xl ' rel="noreferrer">
-                                    {coms.icon}
-                                </a>)
-                        }
-                    </div>
+                    <AppContactIcons/>
                 </div>
 
             </div>
