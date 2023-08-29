@@ -13,10 +13,10 @@ export const AboutMe = () => {
             <div className={twMerge(' md:px-[100px]  rounded-lg  duration-1000 transition-all ',currentView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10')}>
                 <div className='z-[9999]'>
                     <h1 className='text-xl font-medium md:text-3xl text-[#393E46] tracking-wider '>
-                      Front-end Developer 
+                      Softwarer Engineer
                     </h1>
                     <div className='text-md md:text-lg text-justify '>
-                        <p>A fresh graduate student that aspires to be a skilled web developer , capable of creating user-friendly online apps, knowledgable in Java, JavaScript, TypeScript, and informed about
+                        <p>A fresh graduate student that aspires to be a skilled Software Engineer , capable of creating user-friendly online apps, knowledgable in Java, JavaScript, TypeScript, and informed about
 popular frameworks such as React TS and JS. outstanding debugging and issue-solving
 abilities, a keen eye for detail, and a passion for producing high-caliber code.
                         </p>

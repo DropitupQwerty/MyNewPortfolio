@@ -36,9 +36,9 @@ export const SkillsAndLanguages = () => {
                         }
                         )}
                     </div>  
-                    <div className='backdrop-blur-md p-4 shadow-lg rounded-lg'>
+                    <div className='backdrop-blur-md p-4 leading-10 text-lg text-justify shadow-lg rounded-lg'>
                         <p>
-                        As an aspiring front-end developer I use to work with some of these tools and programming languages in creating website&apos;s such as <span className='text-blue-700'>React,HTML, CSS, NodeJs, TailwindCss, JavaScript, TypeScript, SpringBoot</span>
+                        As an aspiring Software Engineer, I am proficient in the following technologies and programming languages when developing projects: React,HTML, CSS, NodeJs, TailwindCss, JavaScript, TypeScript, SpringBoot.
                         </p>
                         <p className='mt-2'>
                         Other tools here was the one I use for designing 
